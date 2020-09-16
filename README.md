@@ -6,7 +6,7 @@ by Christopher Klix
 
 Thank you very much for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
-Currently in beta version live on https://ascii50.firebaseapp.com
+Currently in beta version live on https://ascii50.firebaseapp.com or https://ascii50.web.app
 
 **Please send feature requests or bug reports via the [Google Form](https://forms.gle/2xBZcCashPk7kkgf9)!**
 
