@@ -5,6 +5,11 @@ html {
   background-color: #303130;
 }
 
+html a {
+  color: #a3b900;
+  text-decoration: none;
+}
+
 html ::-moz-selection {
   background: #a3b900 !important;
 }
@@ -184,5 +189,12 @@ table tr td.number {
 table tr td.char:hover {
   background-color: #a3b900;
   cursor: pointer;
+}
+
+#credit {
+  text-align: center;
+  color: #888888;
+  font-size: small;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

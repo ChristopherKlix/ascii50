@@ -23,6 +23,11 @@ html {
     // background
     background-color: $dark;
 
+    a {
+        color: $green;
+        text-decoration: none;
+    }
+
     // selection modifier
     ::selection {
         background: $green !important;
@@ -196,4 +201,11 @@ table {
 
         }
     }
+}
+
+#credit {
+    text-align: center;
+    color: #888888;
+    font-size: small;
+    margin-top: 2rem;
 }
