@@ -187,7 +187,7 @@ command_line.addEventListener('keypress', function (e) {
             // redirect to Git rep
             window.location.href = "";
         } else if (command_line.value.search(/^ascii50\s+matrix$/i) != -1) {
-            return;
+            matrix();
         }
 
         // clear command line
@@ -254,6 +254,10 @@ function quark() {
 
     // set quark-put to random char
     quark_put.innerHTML = String.fromCharCode(parseInt(char, 10));
+}
+
+function matrix() {
+    quark_put.innerHTML = '&#x1F407';
 }
 
 // triggers 'copied' next to quark-put
