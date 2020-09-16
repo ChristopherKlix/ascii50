@@ -1,12 +1,12 @@
 # ascii50
-ASCII chart for CS50
+:duck: ASCII chart for CS50
 
 Final project for CS50x at Harvard
 by Christopher Klix
 
-:duck:
+Thank you very much for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
-Currently in beta version
+Currently in beta version live on https://ascii50.firebaseapp.com
 ## Table of contents
 1. [Features](#features)
 1. [Code explained](#code-explained)
@@ -25,6 +25,9 @@ You can click on any char and it will copy either the integer or char to your cl
 You can run commands via the command line. You can find some available commands further down but there are also some shortcuts, easter eggs & secret commands.
 
 The command line currently only supports the `ascii50` programm which takes one argument.
+
+More detail: [Commands](#commands)
+
 
 ## Code explained
 **Don't be intimidated!** The main content is only in **4 files**:
@@ -58,18 +61,28 @@ Think about it the same way as with hello.c and hello*.
 
 SCSS allows you for example to store rgb values or pixel values in variables at the top and SCSS will replace them within your CSS lines when it is compiled.
 
+It also allows for nesting elements inside of each other.
+
 **SCSS**
 ```scss
 $dark: rgb(48, 49, 48);
 
 #element {
     background-color: $dark;
+    
+    p {
+        color: #ffffff;
+    }
 }
 ```
 **CSS**
 ```scss
 #element {
     background-color: rgb(48, 49, 48);
+}
+
+#element p {
+    color: #ffffff;
 }
 ```
 
