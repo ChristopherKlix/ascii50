@@ -7,6 +7,11 @@ by Christopher Klix
 Thank you very much for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
 Currently in beta version live on https://ascii50.firebaseapp.com
+
+**Please send feature requests or bug reports via the Google Form!**
+
+`Google Form coming soon`
+
 ## Table of contents
 1. [Features](#features)
 1. [Code explained](#code-explained)
@@ -85,6 +90,86 @@ $dark: rgb(48, 49, 48);
     color: #ffffff;
 }
 ```
+
+## Javascript
+Alright, now it is getting fussy.
+
+The JS code in this project is not focused on being clean and super efficient but rather making use of techniques and best practices learned in CS50.
+
+It incorporates `Regular Expressions`, `User Input`, `for loops`, `extracting functions` and much more.
+
+The `<table>` in the **index.html** is rendered empty. After the DOM is loaded, **main.js** populates it with columns and rows.
+
+**HTML**
+```html
+<table id="table">
+</table>
+```
+**JS**
+```javascript
+// get reference to HTML table tag
+let table = document.getElementById("table");
+
+// initialize table mode variable
+// it is used by functions to for example copy a dec || hex integer
+let mode = 'decimal';
+
+/* SETUP TABLE */
+function setup_table(command_mode) {
+
+    // setting mode to input if input conforms to options
+    if (command_mode.search(/^decimal|hexadecimal$/) != -1) {
+        mode = command_mode;
+    } else {
+        return;
+    }
+    ...
+}
+```
+
+This way, the table can be easily re-rendered to display hex codes instead of decimal codes when the user enteres a command.
+
+As you can see, the `setup_table(command_mode)` function uses `Regular Expressions` to check if the argument conforms to possible modes.
+
+Now, we won't go over every implementation detail. If you are interested, you can go into the source code yourself. It is very well documented with comments.
+
+If you have question, feel free to ask me personally and not the CS50 staff, as they are not involved in this project.
+
+### Populating the table
+After we initialized `ascii_code_n` & `ascii_char_n` to empty arrays, we iterate over `0-127` (128 ASCII chars) and populate one column after the other.
+Instead of hardcoding the `chars`, we convert the current `integer` (ASCII code) into the corresponding ASCII char.
+
+**JS**
+```javascript
+// inside the setup_table() function
+...
+
+    for (let number = 0; number < 128; number++) {
+        if (...) {
+        
+            ...
+            
+        } else if (number < 64) {
+            if (mode === 'hexadecimal') {
+                let hex = '0x'.concat(number.toString(16));
+                ascii_code_3.push(hex);
+            } else {
+                ascii_code_3.push(number);
+            }
+            let char = String.fromCharCode(number);
+            ascii_char_3.push(char);
+        } else if (...) {
+        
+                ...
+                
+        }
+    }
+
+...
+```
+`number.toString(16)` converts an integer into a hexadecimal string. `65` becomes `41`.
+
+By convention `'0x'.concat(...)` converts `65` into a more readable format `0x41`.
 
 ## Commands
 As you might have realized, ASCII50 has its own command line... sort of.
