@@ -5,3 +5,5 @@ Final project for CS50x at Harvard
 by Christopher Klix
 
 :duck:
+
+Currently in beta version
