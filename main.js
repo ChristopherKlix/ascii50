@@ -43,21 +43,21 @@ function setup_table(command_mode) {
     for (let number = 0; number < 128; number++) {
         if (number < 16) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_0.push(hex);
             } else {
                 ascii_code_0.push(number);
             }
         } else if (number < 32) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_1.push(hex);
             } else {
                 ascii_code_1.push(number);
             }
         } else if (number < 48) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_2.push(hex);
             } else {
                 ascii_code_2.push(number);
@@ -66,7 +66,7 @@ function setup_table(command_mode) {
             ascii_char_2.push(char);
         } else if (number < 64) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_3.push(hex);
             } else {
                 ascii_code_3.push(number);
@@ -76,7 +76,7 @@ function setup_table(command_mode) {
         }
         else if (number < 80) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_4.push(hex);
             } else {
                 ascii_code_4.push(number);
@@ -85,7 +85,7 @@ function setup_table(command_mode) {
             ascii_char_4.push(char);
         } else if (number < 96) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_5.push(hex);
             } else {
                 ascii_code_5.push(number);
@@ -94,7 +94,7 @@ function setup_table(command_mode) {
             ascii_char_5.push(char);
         } else if (number < 112) {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_6.push(hex);
             } else {
                 ascii_code_6.push(number);
@@ -103,7 +103,7 @@ function setup_table(command_mode) {
             ascii_char_6.push(char);
         } else {
             if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(parseInt(number, 10).toString(16));
+                let hex = '0x'.concat(number.toString(16));
                 ascii_code_7.push(hex);
             } else {
                 ascii_code_7.push(number);
