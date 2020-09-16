@@ -7,9 +7,27 @@ by Christopher Klix
 :duck:
 
 Currently in beta version
-
 ## Table of contents
-**Don't be intimidated!** The main content is only in **3 files**:
+1. [Features](#features)
+1. [Code explained](#code-explained)
+1. [SCSS](#scss)
+1. [Commands](#commands)
+
+## Features
+ASCII50 really is mainly a reference to look up ASCII codes.
+
+**Copy to clipboard**
+
+You can click on any char and it will copy either the integer or char to your clipboard
+
+**Commands**
+
+You can run commands via the command line. You can find some available commands further down but there are also some shortcuts, easter eggs & secret commands.
+
+The command line currently only supports the `ascii50` programm which takes one argument.
+
+## Code explained
+**Don't be intimidated!** The main content is only in **4 files**:
 * index.html
 * main.css
 * main.js
@@ -53,4 +71,20 @@ $dark: rgb(48, 49, 48);
 #element {
     background-color: rgb(48, 49, 48);
 }
+```
+
+## Commands
+As you might have realized, ASCII50 has its own command line... sort of.
+
+**Commands**
+```
+ascii50 hexadecimal (changes ASCII codes into hex)
+
+ascii50 decimal (changes ASCII codes into decimal)
+
+ascii50 sourcecode (shows the source code)
+
+ascii50 matrix (blue pill or red pill?)
+
+... secret commands are there as well?
 ```
