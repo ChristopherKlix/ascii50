@@ -1,54 +1,44 @@
 // get reference to HTML table tag
 let table = document.getElementById("table");
 
-// get reference to input "command-line"
-let command_line = document.getElementById("command-line");
-command_line.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        // regular expressions!!!!!! yay...
-        if (command_line.value.search(/^ascii50\s+dec(imal)?$/i) != -1) {
-            // set ASCII code to decimals
-            set_numbers('decimal');
-        } else if (command_line.value.search(/^ascii50\s+hex(adecimal)?$/i) != -1) {
-            // set ASCII code to hexadecimals
-            set_numbers('hexadecimal');
-        } else if (command_line.value.search(/^ascii50\s+(source(code)?)|(git(hub)?)$/i) != -1) {
-            // redirect to Git rep
-            window.location.href = "";
-        } else if (command_line.value.search(/^ascii50\s+matrix$/i) != -1) {
-            return;
-        }
-
-        // clear command line
-        command_line.value = '';
-    }
-});
-
+// initialize table mode
 let mode = 'decimal';
 
-set_numbers('decimal')
 
-function set_numbers(command_mode) {
-    mode = command_mode;
 
+/* SETUP TABLE */
+
+function setup_table(command_mode) {
+
+    // setting mode to input if input conforms to options
+    if (command_mode.search(/^decimal|hexadecimal$/) != -1) {
+        mode = command_mode;
+    } else {
+        return;
+    }
+
+    // cleaning table to redraw
     table.innerHTML = '';
 
+    // arrays of ASCII codes
     let ascii_code_0 = [];
-    let numbers_1 = [];
-    let numbers_2 = [];
-    let numbers_3 = [];
-    let numbers_4 = [];
-    let numbers_5 = [];
-    let numbers_6 = [];
-    let numbers_7 = [];
+    let ascii_code_1 = [];
+    let ascii_code_2 = [];
+    let ascii_code_3 = [];
+    let ascii_code_4 = [];
+    let ascii_code_5 = [];
+    let ascii_code_6 = [];
+    let ascii_code_7 = [];
+
+    // arrays of ASCII chars
     let ascii_char_0 = [];
-    let ascii_1 = [];
-    let ascii_2 = [];
-    let ascii_3 = [];
-    let ascii_4 = [];
-    let ascii_5 = [];
-    let ascii_6 = [];
-    let ascii_7 = [];
+    let ascii_char_1 = [];
+    let ascii_char_2 = [];
+    let ascii_char_3 = [];
+    let ascii_char_4 = [];
+    let ascii_char_5 = [];
+    let ascii_char_6 = [];
+    let ascii_char_7 = [];
 
     for (let number = 0; number < 128; number++) {
         if (number < 16) {
@@ -61,92 +51,92 @@ function set_numbers(command_mode) {
         } else if (number < 32) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_1.push(hex);
+                ascii_code_1.push(hex);
             } else {
-                numbers_1.push(number);
+                ascii_code_1.push(number);
             }
         } else if (number < 48) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_2.push(hex);
+                ascii_code_2.push(hex);
             } else {
-                numbers_2.push(number);
+                ascii_code_2.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_2.push(char);
+            ascii_char_2.push(char);
         } else if (number < 64) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_3.push(hex);
+                ascii_code_3.push(hex);
             } else {
-                numbers_3.push(number);
+                ascii_code_3.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_3.push(char);
+            ascii_char_3.push(char);
         }
         else if (number < 80) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_4.push(hex);
+                ascii_code_4.push(hex);
             } else {
-                numbers_4.push(number);
+                ascii_code_4.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_4.push(char);
+            ascii_char_4.push(char);
         } else if (number < 96) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_5.push(hex);
+                ascii_code_5.push(hex);
             } else {
-                numbers_5.push(number);
+                ascii_code_5.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_5.push(char);
+            ascii_char_5.push(char);
         } else if (number < 112) {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_6.push(hex);
+                ascii_code_6.push(hex);
             } else {
-                numbers_6.push(number);
+                ascii_code_6.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_6.push(char);
+            ascii_char_6.push(char);
         } else {
             if (mode === 'hexadecimal') {
                 let hex = '0x'.concat(parseInt(number, 10).toString(16));
-                numbers_7.push(hex);
+                ascii_code_7.push(hex);
             } else {
-                numbers_7.push(number);
+                ascii_code_7.push(number);
             }
             let char = String.fromCharCode(number);
-            ascii_7.push(char);
+            ascii_char_7.push(char);
         }
     }
 
     let numbers = [];
-    numbers.push(ascii_code_0, numbers_1, numbers_2, numbers_3);
-    numbers.push(numbers_4, numbers_5, numbers_6, numbers_7);
+    numbers.push(ascii_code_0, ascii_code_1, ascii_code_2, ascii_code_3);
+    numbers.push(ascii_code_4, ascii_code_5, ascii_code_6, ascii_code_7);
     
     // parsing in 'control character' placeholders
     ascii_char_0 = ['NUL', 'SOH', 'STX', 'ETX', 'EOT', 'ENQ', 'ACK', 'BEL', 'BS', 'HT', 'LF', 'VT', 'FF', 'CR', 'SO', 'SI'];
-    ascii_1 = ['DLE','DC1','DC2','DC3','DC4','NAK','SYN','ETB','CAN','EM','SUB','ESC','FS','GS','RS','US'];
+    ascii_char_1 = ['DLE','DC1','DC2','DC3','DC4','NAK','SYN','ETB','CAN','EM','SUB','ESC','FS','GS','RS','US'];
     
     // dynamically placing chars via ASCII conversion above
-        //ascii_2 = ['SP', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/'];
-        //ascii_3 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?'];
-        //ascii_4 = ['@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'];
-        //ascii_5 = ['P', 'Q', 'R', ...];
-        //ascii_6 = ['`', 'a', 'b', ...];
-        //ascii_7 = ['p', 'q', 'r', ...];
+        //ascii_char_2 = ['SP', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/'];
+        //ascii_char_3 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?'];
+        //ascii_char_4 = ['@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'];
+        //ascii_char_5 = ['P', 'Q', 'R', ...];
+        //ascii_char_6 = ['`', 'a', 'b', ...];
+        //ascii_char_7 = ['p', 'q', 'r', ...];
 
     // replacing chars w/ 'control character' placeholders
-    ascii_2[0] = 'SP'; // ascii 32 for 'space'
-    ascii_7[15] = 'DEL'; // ascii 127 for 'delete'
+    ascii_char_2[0] = 'SP'; // ascii 32 for 'space'
+    ascii_char_7[15] = 'DEL'; // ascii 127 for 'delete'
 
     // create array with ALL ascii columns
     let ascii = [];
-    ascii.push(ascii_char_0, ascii_1, ascii_2, ascii_3);
-    ascii.push(ascii_4, ascii_5, ascii_6, ascii_7);
+    ascii.push(ascii_char_0, ascii_char_1, ascii_char_2, ascii_char_3);
+    ascii.push(ascii_char_4, ascii_char_5, ascii_char_6, ascii_char_7);
     
     const columns = 16;
     
@@ -176,7 +166,40 @@ function set_numbers(command_mode) {
     }
 }
 
-/* copy char or int to clipboard */
+/* end */
+
+
+
+/* COMMAND LINE */
+
+// get reference to input "command-line"
+let command_line = document.getElementById("command-line");
+command_line.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        // regular expressions!!!!!! yay...
+        if (command_line.value.search(/^ascii50\s+dec(imal)?$/i) != -1) {
+            // set ASCII code to decimals
+            setup_table('decimal');
+        } else if (command_line.value.search(/^ascii50\s+hex(adecimal)?$/i) != -1) {
+            // set ASCII code to hexadecimals
+            setup_table('hexadecimal');
+        } else if (command_line.value.search(/^ascii50\s+(source(code)?)|(git(hub)?)$/i) != -1) {
+            // redirect to Git rep
+            window.location.href = "";
+        } else if (command_line.value.search(/^ascii50\s+matrix$/i) != -1) {
+            return;
+        }
+
+        // clear command line
+        command_line.value = '';
+    }
+});
+
+/* end */
+
+
+
+/* COPY TO CLIPBOARD */
 
 function copy_to_clipboard(id) {
     // get reference to <td> that was clicked
@@ -288,3 +311,8 @@ function change_copy_mode() {
 }
 
 /* end */
+
+
+
+/* run initial table setup */
+setup_table('decimal');
