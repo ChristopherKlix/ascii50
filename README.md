@@ -8,14 +8,13 @@ Thank you very much for amazing lectures to David J. Malan, Brian Yu, Colton Ogd
 
 Currently in beta version live on https://ascii50.firebaseapp.com
 
-**Please send feature requests or bug reports via the Google Form!**
-
-`Google Form coming soon`
+**Please send feature requests or bug reports via the [Google Form](https://forms.gle/2xBZcCashPk7kkgf9)!**
 
 ## Table of contents
 1. [Features](#features)
 1. [Code explained](#code-explained)
 1. [SCSS](#scss)
+1. [Javascript](#javascript)
 1. [Commands](#commands)
 
 ## Features
