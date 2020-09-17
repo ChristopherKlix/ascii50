@@ -18,6 +18,7 @@ Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 1. [HTML](#html)
 1. [SCSS](#scss)
 1. [Javascript](#javascript)
+1. [Regular Expressions](#regular-expressions)
 1. [Commands](#commands)
 
 ## Features
@@ -214,6 +215,18 @@ Instead of hardcoding the `chars`, we convert the current `integer` (ASCII code)
 `number.toString(16)` converts an integer into a hexadecimal string. `65` becomes `41`.
 
 By convention `'0x'.concat(...)` converts `65` into a more readable format `0x41`.
+
+## Regular Expressions
+Yeah, what everybody was waiting for!
+
+ASCII50 makes use of **RE** for processing the command-line commands.
+For example, triggering HEX mode does not only work with `ascii50 hexadecimal` but also `ascii50 hex`.
+
+Or in **RE** words: `/^ascii50\s+hex(adecimal)?$/i`
+
+Check out the sourcecode for `main.js` to see the **RE** for getting the sourcecode.
+
+A very helpful tool for figuring out **RE** is https://regex101.com.
 
 ## Commands
 As you might have realized, ASCII50 has its own command line... sort of.
