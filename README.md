@@ -4,15 +4,18 @@
 Final project for CS50x at Harvard
 by Christopher Klix
 
-Thank you very much for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
+Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
 Currently in beta version live on https://ascii50.firebaseapp.com or https://ascii50.web.app
+
+Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 
 **Please send feature requests or bug reports via the [Google Form](https://forms.gle/2xBZcCashPk7kkgf9)!**
 
 ## Table of contents
 1. [Features](#features)
 1. [Code explained](#code-explained)
+1. [HTML](#html)
 1. [SCSS](#scss)
 1. [Javascript](#javascript)
 1. [Commands](#commands)
@@ -31,6 +34,13 @@ You can run commands via the command line. You can find some available commands 
 The command line currently only supports the `ascii50` programm which takes one argument.
 
 More detail: [Commands](#commands)
+
+**Upcoming features**
+- [x] copy int or char to clipboard
+- [ ] explanations for ASCII codes 0-32 & 128 (control characters)
+- [ ] type instant conversion (text field to type in 'A' -> duck says '65')
+- [ ] maybe interactive duck? - are there APIs for GPT or chatbots?
+- [ ] syntax references - converting int to ASCII char in Python, JS etc.
 
 
 ## Code explained
@@ -53,6 +63,41 @@ It adds a couple of files that allows for using other Firebase services like Aut
 And then there is **Github's** files:
 * .gitignore
 * README.md (which you are currently reading)
+
+## HTML
+The **index.html** file in itself is pretty simple.
+
+By convention, the entire content is wrapped into a `<div id="wrapper">`. It technically is a bit redundant, as `<body>` already does that, but it allows for some more control in CSS for example.
+
+Inside the `<div id="wrapper">` are **three sections**.
+* `<div id="header">`
+* `<table id="table">`
+* `<div id="copyright">`
+
+### header (not `<head>`)
+This section contains everything **above** the table. From the title, to the command-line and the duck.
+
+Each sub-section is wrapped into a container `<div>` with a distinct id.
+This way, both, CSS and JS can easily reference each individual element.
+
+### table
+The table contains... well, nothing really.
+
+```
+...
+<!-- TABLE -- empty after DOM loaded, JS fills dynamically -->
+<table id="table">
+</table>
+...
+```
+
+The **main.js** file is executed after the DOM has been loaded and populates the table.
+This simply means, that it creates `<tr>` and `<td>` tags and inserts integers and strings.
+
+See [Javascript](#javascript) for more detail.
+
+### copyright
+Well, each site needs a copyright line.
 
 ## SCSS
 **main.scss** is pre-processed into **main.css**
@@ -183,5 +228,5 @@ ascii50 sourcecode (shows the source code)
 
 ascii50 matrix (blue pill or red pill?)
 
-... secret commands are there as well?
+... secret commands you said?
 ```
