@@ -6,6 +6,12 @@ by Christopher Klix
 
 Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ChristopherKlix/ascii50?style=for-the-badge)
+
+![GitHub issues](https://img.shields.io/github/issues/ChristopherKlix/ascii50?style=for-the-badge)
+
+![GitHub](https://img.shields.io/github/license/ChristopherKlix/ascii50?style=for-the-badge)
+
 Currently in beta version live on https://ascii50.firebaseapp.com or https://ascii50.web.app
 
 Both are hosted and secured by [Google Firebase](https://firebase.google.com).
