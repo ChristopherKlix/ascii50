@@ -12,7 +12,7 @@ Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & th
 
 ![GitHub](https://img.shields.io/github/license/ChristopherKlix/ascii50?style=for-the-badge)
 
-Currently in beta version live on https://ascii50.firebaseapp.com or https://ascii50.web.app
+Currently live on https://ascii50.firebaseapp.com or https://ascii50.web.app
 
 Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 
