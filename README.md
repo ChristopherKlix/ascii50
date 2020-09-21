@@ -44,6 +44,8 @@ More detail: [Commands](#commands)
 
 **Upcoming features**
 - [x] copy int or char to clipboard
+- [ ] add defer to JS script file (next release)
+- [ ] improve mobile user interface (next release)
 - [ ] explanations for ASCII codes 0-32 & 128 (control characters)
 - [ ] type instant conversion (text field to type in 'A' -> duck says '65')
 - [ ] maybe interactive duck? - are there APIs for GPT or chatbots?
