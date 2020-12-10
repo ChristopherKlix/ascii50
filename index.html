@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- linking css file -->
+    <!-- Linking css file -->
     <link rel="stylesheet" href="main.css">
 
-    <!-- favicon -->
+    <!-- Linking main.js file -->
+    <script defer src="main.js"></script>
+
+    <!-- Favicon -->
     <link rel="icon" href="ddb.png" type="image/png" sizes="16x16">
 
-    <!-- website title -->
+    <!-- Website title -->
     <title>ASCII CS50</title>
 </head>
 <body>
@@ -90,11 +93,4 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-
-<!-- Loading main.js at the end of DOM -->
-<!-- Therefore, main.js gets executed AFTER the DOM has loaded -->
-<!-- This can be simplified by using jQuery -->
-<!-- But this project uses vanilla JS -->
-<script src="main.js"></script>
-
 </html>
