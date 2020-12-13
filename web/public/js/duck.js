@@ -22,10 +22,10 @@ function matrix() {
     quark_put.innerHTML = '&#x1F407';
 }
 
-// triggers 'copied' next to quark-put
+// Triggers 'copied' next to quark-put
 function copied(clipboard) {
     // get reference to 'copied' element
-    let copied = document.getElementById("copied");
+    const copied = document.getElementById("copied");
 
     // set initial animation duration for 'copied'
     copied.style.transition = 'opacity 0.1s';

@@ -1,10 +1,3 @@
-// Get reference to HTML table tag
-let table = document.getElementById("table");
-
-// Initialize table mode
-let mode = 'decimal';
-
-
 /* SETUP TABLE */
 
 function setup_table(command_mode) {
@@ -168,64 +161,26 @@ function setup_table(command_mode) {
 /* end */
 
 
-/* COMMAND LINE */
-
-// get reference to input "command-line"
-let command_line = document.getElementById("command-line");
-command_line.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        // regular expressions!!!!!! yay...
-        if (command_line.value.search(/^ascii50\s+dec(imal)?$/i) != -1) {
-            // set ASCII code to decimals
-            setup_table('decimal');
-        } else if (command_line.value.search(/^ascii50\s+hex(adecimal)?$/i) != -1) {
-            // set ASCII code to hexadecimals
-            setup_table('hexadecimal');
-        } else if (command_line.value.search(/^ascii50\s+(source(code)?)|(git(hub)?)$/i) != -1) {
-            // redirect to Git rep
-            window.location.href = "";
-        } else if (command_line.value.search(/^ascii50\s+matrix$/i) != -1) {
-            matrix();
-        }
-
-        // clear command line
-        command_line.value = '';
-    }
-});
-
-/* end */
-
-
 /* COPY TO CLIPBOARD */
 
-function copy_to_clipboard(id) {
-    // get reference to <td> that was clicked
-    let cell = document.getElementById(id);
+function copy_to_clipboard(id, ascii) {
+    // Get reference to <td> that was clicked
+    const cell = document.getElementById(id);
 
-    // generate a decimal integer
-    let dec = (cell.innerText).charCodeAt(0);
-    // generate a hexadecimal integer
-    let hex = '0x'.concat(parseInt((cell.innerText).charCodeAt(0), 10).toString(16));
+    const clipboard = ascii
 
-    // assigning previous dec or hex to int w/ tenary operator
-    let int = mode === 'decimal' ? dec : hex;
-
-    // assign either int or char w/ tenary operator
-    let clipboard = copy_mode === 'int' ? int : cell.innerText;
-
-    // actually copying variable clipboard to the clipboard
+    // Copy to clipboard
     navigator.clipboard.writeText(clipboard).then(function() {
-        // clipboard successfully set
-        // copied function to trigger duck
         copied(clipboard)
     });
 
-    // animation of cell flashing green
+    // Animation of cell flashing green
+    const color = cell.style.color;
     cell.style.transition = 'color 0.1s';
-    cell.style.color = 'rgb(163, 185, 0)';
+    cell.style.color = 'rgba(163, 185, 0, 1)';
     window.setTimeout(function(){
         cell.style.transition = 'color 1s';
-        cell.style.color = 'rgb(255, 255, 255)';
+        cell.style.color = color;
     }, 1000)
 }
 
@@ -238,8 +193,8 @@ function copy_to_clipboard(id) {
 let copy_mode = 'int';
 
 // get reference to menu items for copy mode
-let copy_mode_int = document.getElementById("copy-mode-int");
-let copy_mode_char = document.getElementById("copy-mode-char");
+let copy_mode_int = document.getElementById('copy-mode-int');
+let copy_mode_char = document.getElementById('copy-mode-char');
 
 // add event listener for menu items
 copy_mode_int.addEventListener('click', change_copy_mode);
