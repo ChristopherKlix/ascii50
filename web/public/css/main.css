@@ -101,7 +101,7 @@ html ::selection {
   opacity: 0;
   transition: opacity 0.1s;
 }
-#header #duck-wrapper #quark-put {
+#header #duck-wrapper #quack-put {
   width: 80px;
   padding: 0.3rem 0;
   margin: 0;
