@@ -5,7 +5,7 @@ const json = {
             "ascii": "NUL",
             "description": "Literal null character.",
             "dec": "0",
-            "hex": "0x000",
+            "hex": "0x00",
             "oct": "0",
             "bin": "00000000"
         },
@@ -14,7 +14,7 @@ const json = {
             "ascii": "SOH",
             "description": "Denotes the Start of Header.",
             "dec": "1",
-            "hex": "0x001",
+            "hex": "0x01",
             "oct": "1",
             "bin": "00000001"
         },
@@ -23,7 +23,7 @@ const json = {
             "ascii": "STX",
             "description": "Denotes the Start of Text (Paragraph).",
             "dec": "2",
-            "hex": "0x002",
+            "hex": "0x02",
             "oct": "2",
             "bin": "00000010"
         },
@@ -32,7 +32,7 @@ const json = {
             "ascii": "ETX",
             "description": "Denotes the End of Text (Paragraph).",
             "dec": "3",
-            "hex": "0x003",
+            "hex": "0x03",
             "oct": "3",
             "bin": "00000011"
         },
@@ -41,7 +41,7 @@ const json = {
             "ascii": "EOT",
             "description": "Denotes the End of Transmission.",
             "dec": "4",
-            "hex": "0x004",
+            "hex": "0x04",
             "oct": "4",
             "bin": "00000100"
         },
@@ -50,7 +50,7 @@ const json = {
             "ascii": "ENQ",
             "description": "Enquiry",
             "dec": "5",
-            "hex": "0x005",
+            "hex": "0x05",
             "oct": "5",
             "bin": "00000101"
         },
@@ -59,7 +59,7 @@ const json = {
             "ascii": "ACK",
             "description": "Acknowledgement",
             "dec": "6",
-            "hex": "0x006",
+            "hex": "0x06",
             "oct": "6",
             "bin": "00000110"
         },
@@ -68,7 +68,7 @@ const json = {
             "ascii": "BEL",
             "description": "Was used to trigger a mechanical bell.",
             "dec": "7",
-            "hex": "0x007",
+            "hex": "0x07",
             "oct": "7",
             "bin": "00000111"
         },
@@ -77,7 +77,7 @@ const json = {
             "ascii": "BS",
             "description": "It is not to insult someone. It is the control character for Backspace.",
             "dec": "8",
-            "hex": "0x008",
+            "hex": "0x08",
             "oct": "10",
             "bin": "00001000"
         },
@@ -86,7 +86,7 @@ const json = {
             "ascii": "HT",
             "description": "",
             "dec": "9",
-            "hex": "0x009",
+            "hex": "0x09",
             "oct": "11",
             "bin": "00001001"
         },
@@ -95,7 +95,7 @@ const json = {
             "ascii": "LF",
             "description": "",
             "dec": "10",
-            "hex": "0x00a",
+            "hex": "0x0a",
             "oct": "12",
             "bin": "00001010"
         },
@@ -104,7 +104,7 @@ const json = {
             "ascii": "VT",
             "description": "",
             "dec": "11",
-            "hex": "0x00b",
+            "hex": "0x0b",
             "oct": "13",
             "bin": "00001011"
         },
@@ -113,7 +113,7 @@ const json = {
             "ascii": "FF",
             "description": "",
             "dec": "12",
-            "hex": "0x00c",
+            "hex": "0x0c",
             "oct": "14",
             "bin": "00001100"
         },
@@ -122,7 +122,7 @@ const json = {
             "ascii": "CR",
             "description": "",
             "dec": "13",
-            "hex": "0x00d",
+            "hex": "0x0d",
             "oct": "15",
             "bin": "00001101"
         },
@@ -131,7 +131,7 @@ const json = {
             "ascii": "SO",
             "description": "",
             "dec": "14",
-            "hex": "0x00e",
+            "hex": "0x0e",
             "oct": "16",
             "bin": "00001110"
         },
@@ -140,7 +140,7 @@ const json = {
             "ascii": "SI",
             "description": "",
             "dec": "15",
-            "hex": "0x00f",
+            "hex": "0x0f",
             "oct": "17",
             "bin": "00001111"
         },
@@ -149,7 +149,7 @@ const json = {
             "ascii": "DLE",
             "description": "",
             "dec": "16",
-            "hex": "0x010",
+            "hex": "0x10",
             "oct": "20",
             "bin": "00010000"
         },
@@ -158,7 +158,7 @@ const json = {
             "ascii": "DC1",
             "description": "",
             "dec": "17",
-            "hex": "0x011",
+            "hex": "0x11",
             "oct": "21",
             "bin": "00010001"
         },
@@ -167,7 +167,7 @@ const json = {
             "ascii": "DC2",
             "description": "",
             "dec": "18",
-            "hex": "0x012",
+            "hex": "0x12",
             "oct": "22",
             "bin": "00010010"
         },
@@ -176,7 +176,7 @@ const json = {
             "ascii": "DC3",
             "description": "",
             "dec": "19",
-            "hex": "0x013",
+            "hex": "0x13",
             "oct": "23",
             "bin": "00010011"
         },
@@ -185,7 +185,7 @@ const json = {
             "ascii": "DC4",
             "description": "",
             "dec": "20",
-            "hex": "0x014",
+            "hex": "0x14",
             "oct": "24",
             "bin": "00010100"
         },
@@ -194,7 +194,7 @@ const json = {
             "ascii": "NAK",
             "description": "",
             "dec": "21",
-            "hex": "0x015",
+            "hex": "0x15",
             "oct": "25",
             "bin": "00010101"
         },
@@ -203,7 +203,7 @@ const json = {
             "ascii": "SYN",
             "description": "",
             "dec": "22",
-            "hex": "0x016",
+            "hex": "0x16",
             "oct": "26",
             "bin": "00010110"
         },
@@ -212,7 +212,7 @@ const json = {
             "ascii": "ETB",
             "description": "",
             "dec": "23",
-            "hex": "0x017",
+            "hex": "0x17",
             "oct": "27",
             "bin": "00010111"
         },
@@ -221,7 +221,7 @@ const json = {
             "ascii": "CAN",
             "description": "",
             "dec": "24",
-            "hex": "0x018",
+            "hex": "0x18",
             "oct": "30",
             "bin": "00011000"
         },
@@ -230,7 +230,7 @@ const json = {
             "ascii": "EM",
             "description": "",
             "dec": "25",
-            "hex": "0x019",
+            "hex": "0x19",
             "oct": "31",
             "bin": "00011001"
         },
@@ -239,7 +239,7 @@ const json = {
             "ascii": "SUB",
             "description": "",
             "dec": "26",
-            "hex": "0x01a",
+            "hex": "0x1a",
             "oct": "32",
             "bin": "00011010"
         },
@@ -248,7 +248,7 @@ const json = {
             "ascii": "ESC",
             "description": "",
             "dec": "27",
-            "hex": "0x01b",
+            "hex": "0x1b",
             "oct": "33",
             "bin": "00011011"
         },
@@ -257,7 +257,7 @@ const json = {
             "ascii": "FS",
             "description": "",
             "dec": "28",
-            "hex": "0x01c",
+            "hex": "0x1c",
             "oct": "34",
             "bin": "00011100"
         },
@@ -266,7 +266,7 @@ const json = {
             "ascii": "GS",
             "description": "",
             "dec": "29",
-            "hex": "0x01d",
+            "hex": "0x1d",
             "oct": "35",
             "bin": "00011101"
         },
@@ -275,7 +275,7 @@ const json = {
             "ascii": "RS",
             "description": "",
             "dec": "30",
-            "hex": "0x01e",
+            "hex": "0x1e",
             "oct": "36",
             "bin": "00011110"
         },
@@ -284,7 +284,7 @@ const json = {
             "ascii": "US",
             "description": "",
             "dec": "31",
-            "hex": "0x01f",
+            "hex": "0x1f",
             "oct": "37",
             "bin": "00011111"
         },
@@ -293,7 +293,7 @@ const json = {
             "ascii": "SP",
             "description": "",
             "dec": "32",
-            "hex": "0x020",
+            "hex": "0x20",
             "oct": "40",
             "bin": "00100000"
         },
@@ -302,7 +302,7 @@ const json = {
             "ascii": "!",
             "description": "",
             "dec": "33",
-            "hex": "0x021",
+            "hex": "0x21",
             "oct": "41",
             "bin": "00100001"
         },
@@ -311,7 +311,7 @@ const json = {
             "ascii": "\"",
             "description": "",
             "dec": "34",
-            "hex": "0x022",
+            "hex": "0x22",
             "oct": "42",
             "bin": "00100010"
         },
@@ -320,7 +320,7 @@ const json = {
             "ascii": "#",
             "description": "",
             "dec": "35",
-            "hex": "0x023",
+            "hex": "0x23",
             "oct": "43",
             "bin": "00100011"
         },
@@ -329,7 +329,7 @@ const json = {
             "ascii": "$",
             "description": "",
             "dec": "36",
-            "hex": "0x024",
+            "hex": "0x24",
             "oct": "44",
             "bin": "00100100"
         },
@@ -338,7 +338,7 @@ const json = {
             "ascii": "%",
             "description": "",
             "dec": "37",
-            "hex": "0x025",
+            "hex": "0x25",
             "oct": "45",
             "bin": "00100101"
         },
@@ -347,7 +347,7 @@ const json = {
             "ascii": "&",
             "description": "",
             "dec": "38",
-            "hex": "0x026",
+            "hex": "0x26",
             "oct": "46",
             "bin": "00100110"
         },
@@ -356,7 +356,7 @@ const json = {
             "ascii": "\'",
             "description": "",
             "dec": "39",
-            "hex": "0x027",
+            "hex": "0x27",
             "oct": "47",
             "bin": "00100111"
         },
@@ -365,7 +365,7 @@ const json = {
             "ascii": "(",
             "description": "",
             "dec": "40",
-            "hex": "0x028",
+            "hex": "0x28",
             "oct": "50",
             "bin": "00101000"
         },
@@ -374,7 +374,7 @@ const json = {
             "ascii": ")",
             "description": "",
             "dec": "41",
-            "hex": "0x029",
+            "hex": "0x29",
             "oct": "51",
             "bin": "00101001"
         },
@@ -383,7 +383,7 @@ const json = {
             "ascii": "*",
             "description": "",
             "dec": "42",
-            "hex": "0x02a",
+            "hex": "0x2a",
             "oct": "52",
             "bin": "00101010"
         },
@@ -392,7 +392,7 @@ const json = {
             "ascii": "+",
             "description": "",
             "dec": "43",
-            "hex": "0x02b",
+            "hex": "0x2b",
             "oct": "53",
             "bin": "00101011"
         },
@@ -401,7 +401,7 @@ const json = {
             "ascii": ",",
             "description": "",
             "dec": "44",
-            "hex": "0x02c",
+            "hex": "0x2c",
             "oct": "54",
             "bin": "00101100"
         },
@@ -410,7 +410,7 @@ const json = {
             "ascii": "-",
             "description": "",
             "dec": "45",
-            "hex": "0x02d",
+            "hex": "0x2d",
             "oct": "55",
             "bin": "00101101"
         },
@@ -419,7 +419,7 @@ const json = {
             "ascii": ".",
             "description": "",
             "dec": "46",
-            "hex": "0x02e",
+            "hex": "0x2e",
             "oct": "56",
             "bin": "00101110"
         },
@@ -428,7 +428,7 @@ const json = {
             "ascii": "/",
             "description": "",
             "dec": "47",
-            "hex": "0x02f",
+            "hex": "0x2f",
             "oct": "57",
             "bin": "00101111"
         },
@@ -437,7 +437,7 @@ const json = {
             "ascii": "0",
             "description": "",
             "dec": "48",
-            "hex": "0x030",
+            "hex": "0x30",
             "oct": "60",
             "bin": "00110000"
         },
@@ -446,7 +446,7 @@ const json = {
             "ascii": "1",
             "description": "",
             "dec": "49",
-            "hex": "0x031",
+            "hex": "0x31",
             "oct": "61",
             "bin": "00110001"
         },
@@ -455,7 +455,7 @@ const json = {
             "ascii": "2",
             "description": "",
             "dec": "50",
-            "hex": "0x032",
+            "hex": "0x32",
             "oct": "62",
             "bin": "00110010"
         },
@@ -464,7 +464,7 @@ const json = {
             "ascii": "3",
             "description": "",
             "dec": "51",
-            "hex": "0x033",
+            "hex": "0x33",
             "oct": "63",
             "bin": "00110011"
         },
@@ -473,7 +473,7 @@ const json = {
             "ascii": "4",
             "description": "",
             "dec": "52",
-            "hex": "0x034",
+            "hex": "0x34",
             "oct": "64",
             "bin": "00110100"
         },
@@ -482,7 +482,7 @@ const json = {
             "ascii": "5",
             "description": "",
             "dec": "53",
-            "hex": "0x035",
+            "hex": "0x35",
             "oct": "65",
             "bin": "00110101"
         },
@@ -491,7 +491,7 @@ const json = {
             "ascii": "6",
             "description": "",
             "dec": "54",
-            "hex": "0x036",
+            "hex": "0x36",
             "oct": "66",
             "bin": "00110110"
         },
@@ -500,7 +500,7 @@ const json = {
             "ascii": "7",
             "description": "",
             "dec": "55",
-            "hex": "0x037",
+            "hex": "0x37",
             "oct": "67",
             "bin": "00110111"
         },
@@ -509,7 +509,7 @@ const json = {
             "ascii": "8",
             "description": "",
             "dec": "56",
-            "hex": "0x038",
+            "hex": "0x38",
             "oct": "70",
             "bin": "00111000"
         },
@@ -518,7 +518,7 @@ const json = {
             "ascii": "9",
             "description": "",
             "dec": "57",
-            "hex": "0x039",
+            "hex": "0x39",
             "oct": "71",
             "bin": "00111001"
         },
@@ -527,7 +527,7 @@ const json = {
             "ascii": ":",
             "description": "",
             "dec": "58",
-            "hex": "0x03a",
+            "hex": "0x3a",
             "oct": "72",
             "bin": "00111010"
         },
@@ -536,7 +536,7 @@ const json = {
             "ascii": ";",
             "description": "",
             "dec": "59",
-            "hex": "0x03b",
+            "hex": "0x3b",
             "oct": "73",
             "bin": "00111011"
         },
@@ -545,7 +545,7 @@ const json = {
             "ascii": "<",
             "description": "",
             "dec": "60",
-            "hex": "0x03c",
+            "hex": "0x3c",
             "oct": "74",
             "bin": "00111100"
         },
@@ -554,7 +554,7 @@ const json = {
             "ascii": "=",
             "description": "",
             "dec": "61",
-            "hex": "0x03d",
+            "hex": "0x3d",
             "oct": "75",
             "bin": "00111101"
         },
@@ -563,7 +563,7 @@ const json = {
             "ascii": ">",
             "description": "",
             "dec": "62",
-            "hex": "0x03e",
+            "hex": "0x3e",
             "oct": "76",
             "bin": "00111110"
         },
@@ -572,7 +572,7 @@ const json = {
             "ascii": "?",
             "description": "",
             "dec": "63",
-            "hex": "0x03f",
+            "hex": "0x3f",
             "oct": "77",
             "bin": "00111111"
         },
@@ -581,7 +581,7 @@ const json = {
             "ascii": "@",
             "description": "",
             "dec": "64",
-            "hex": "0x040",
+            "hex": "0x40",
             "oct": "100",
             "bin": "01000000"
         },
@@ -590,7 +590,7 @@ const json = {
             "ascii": "A",
             "description": "",
             "dec": "65",
-            "hex": "0x041",
+            "hex": "0x41",
             "oct": "101",
             "bin": "01000001"
         },
@@ -599,7 +599,7 @@ const json = {
             "ascii": "B",
             "description": "",
             "dec": "66",
-            "hex": "0x042",
+            "hex": "0x42",
             "oct": "102",
             "bin": "01000010"
         },
@@ -608,7 +608,7 @@ const json = {
             "ascii": "C",
             "description": "",
             "dec": "67",
-            "hex": "0x043",
+            "hex": "0x43",
             "oct": "103",
             "bin": "01000011"
         },
@@ -617,7 +617,7 @@ const json = {
             "ascii": "D",
             "description": "",
             "dec": "68",
-            "hex": "0x044",
+            "hex": "0x44",
             "oct": "104",
             "bin": "01000100"
         },
@@ -626,7 +626,7 @@ const json = {
             "ascii": "E",
             "description": "",
             "dec": "69",
-            "hex": "0x045",
+            "hex": "0x45",
             "oct": "105",
             "bin": "01000101"
         },
@@ -635,7 +635,7 @@ const json = {
             "ascii": "F",
             "description": "",
             "dec": "70",
-            "hex": "0x046",
+            "hex": "0x46",
             "oct": "106",
             "bin": "01000110"
         },
@@ -644,7 +644,7 @@ const json = {
             "ascii": "G",
             "description": "",
             "dec": "71",
-            "hex": "0x047",
+            "hex": "0x47",
             "oct": "107",
             "bin": "01000111"
         },
@@ -653,7 +653,7 @@ const json = {
             "ascii": "H",
             "description": "",
             "dec": "72",
-            "hex": "0x048",
+            "hex": "0x48",
             "oct": "110",
             "bin": "01001000"
         },
@@ -662,7 +662,7 @@ const json = {
             "ascii": "I",
             "description": "",
             "dec": "73",
-            "hex": "0x049",
+            "hex": "0x49",
             "oct": "111",
             "bin": "01001001"
         },
@@ -671,7 +671,7 @@ const json = {
             "ascii": "J",
             "description": "",
             "dec": "74",
-            "hex": "0x04a",
+            "hex": "0x4a",
             "oct": "112",
             "bin": "01001010"
         },
@@ -680,7 +680,7 @@ const json = {
             "ascii": "K",
             "description": "",
             "dec": "75",
-            "hex": "0x04b",
+            "hex": "0x4b",
             "oct": "113",
             "bin": "01001011"
         },
@@ -689,7 +689,7 @@ const json = {
             "ascii": "L",
             "description": "",
             "dec": "76",
-            "hex": "0x04c",
+            "hex": "0x4c",
             "oct": "114",
             "bin": "01001100"
         },
@@ -698,7 +698,7 @@ const json = {
             "ascii": "M",
             "description": "",
             "dec": "77",
-            "hex": "0x04d",
+            "hex": "0x4d",
             "oct": "115",
             "bin": "01001101"
         },
@@ -707,7 +707,7 @@ const json = {
             "ascii": "N",
             "description": "",
             "dec": "78",
-            "hex": "0x04e",
+            "hex": "0x4e",
             "oct": "116",
             "bin": "01001110"
         },
@@ -716,7 +716,7 @@ const json = {
             "ascii": "O",
             "description": "",
             "dec": "79",
-            "hex": "0x04f",
+            "hex": "0x4f",
             "oct": "117",
             "bin": "01001111"
         },
@@ -725,7 +725,7 @@ const json = {
             "ascii": "P",
             "description": "",
             "dec": "80",
-            "hex": "0x050",
+            "hex": "0x50",
             "oct": "120",
             "bin": "01010000"
         },
@@ -734,7 +734,7 @@ const json = {
             "ascii": "Q",
             "description": "",
             "dec": "81",
-            "hex": "0x051",
+            "hex": "0x51",
             "oct": "121",
             "bin": "01010001"
         },
@@ -743,7 +743,7 @@ const json = {
             "ascii": "R",
             "description": "",
             "dec": "82",
-            "hex": "0x052",
+            "hex": "0x52",
             "oct": "122",
             "bin": "01010010"
         },
@@ -752,7 +752,7 @@ const json = {
             "ascii": "S",
             "description": "",
             "dec": "83",
-            "hex": "0x053",
+            "hex": "0x53",
             "oct": "123",
             "bin": "01010011"
         },
@@ -761,7 +761,7 @@ const json = {
             "ascii": "T",
             "description": "",
             "dec": "84",
-            "hex": "0x054",
+            "hex": "0x54",
             "oct": "124",
             "bin": "01010100"
         },
@@ -770,7 +770,7 @@ const json = {
             "ascii": "U",
             "description": "",
             "dec": "85",
-            "hex": "0x055",
+            "hex": "0x55",
             "oct": "125",
             "bin": "01010101"
         },
@@ -779,7 +779,7 @@ const json = {
             "ascii": "V",
             "description": "",
             "dec": "86",
-            "hex": "0x056",
+            "hex": "0x56",
             "oct": "126",
             "bin": "01010110"
         },
@@ -788,7 +788,7 @@ const json = {
             "ascii": "W",
             "description": "",
             "dec": "87",
-            "hex": "0x057",
+            "hex": "0x57",
             "oct": "127",
             "bin": "01010111"
         },
@@ -797,7 +797,7 @@ const json = {
             "ascii": "X",
             "description": "",
             "dec": "88",
-            "hex": "0x058",
+            "hex": "0x58",
             "oct": "130",
             "bin": "01011000"
         },
@@ -806,7 +806,7 @@ const json = {
             "ascii": "Y",
             "description": "",
             "dec": "89",
-            "hex": "0x059",
+            "hex": "0x59",
             "oct": "131",
             "bin": "01011001"
         },
@@ -815,7 +815,7 @@ const json = {
             "ascii": "Z",
             "description": "",
             "dec": "90",
-            "hex": "0x05a",
+            "hex": "0x5a",
             "oct": "132",
             "bin": "01011010"
         },
@@ -824,7 +824,7 @@ const json = {
             "ascii": "[",
             "description": "",
             "dec": "91",
-            "hex": "0x05b",
+            "hex": "0x5b",
             "oct": "133",
             "bin": "01011011"
         },
@@ -833,7 +833,7 @@ const json = {
             "ascii": "\\",
             "description": "",
             "dec": "92",
-            "hex": "0x05c",
+            "hex": "0x5c",
             "oct": "134",
             "bin": "01011100"
         },
@@ -842,7 +842,7 @@ const json = {
             "ascii": "]",
             "description": "",
             "dec": "93",
-            "hex": "0x05d",
+            "hex": "0x5d",
             "oct": "135",
             "bin": "01011101"
         },
@@ -851,7 +851,7 @@ const json = {
             "ascii": "^",
             "description": "",
             "dec": "94",
-            "hex": "0x05e",
+            "hex": "0x5e",
             "oct": "136",
             "bin": "01011110"
         },
@@ -860,7 +860,7 @@ const json = {
             "ascii": "_",
             "description": "",
             "dec": "95",
-            "hex": "0x05f",
+            "hex": "0x5f",
             "oct": "137",
             "bin": "01011111"
         },
@@ -869,7 +869,7 @@ const json = {
             "ascii": "`",
             "description": "",
             "dec": "96",
-            "hex": "0x060",
+            "hex": "0x60",
             "oct": "140",
             "bin": "01100000"
         },
@@ -878,7 +878,7 @@ const json = {
             "ascii": "a",
             "description": "",
             "dec": "97",
-            "hex": "0x061",
+            "hex": "0x61",
             "oct": "141",
             "bin": "01100001"
         },
@@ -887,7 +887,7 @@ const json = {
             "ascii": "b",
             "description": "",
             "dec": "98",
-            "hex": "0x062",
+            "hex": "0x62",
             "oct": "142",
             "bin": "01100010"
         },
@@ -896,7 +896,7 @@ const json = {
             "ascii": "c",
             "description": "",
             "dec": "99",
-            "hex": "0x063",
+            "hex": "0x63",
             "oct": "143",
             "bin": "01100011"
         },
@@ -905,7 +905,7 @@ const json = {
             "ascii": "d",
             "description": "",
             "dec": "100",
-            "hex": "0x064",
+            "hex": "0x64",
             "oct": "144",
             "bin": "01100100"
         },
@@ -914,7 +914,7 @@ const json = {
             "ascii": "e",
             "description": "",
             "dec": "101",
-            "hex": "0x065",
+            "hex": "0x65",
             "oct": "145",
             "bin": "01100101"
         },
@@ -923,7 +923,7 @@ const json = {
             "ascii": "f",
             "description": "",
             "dec": "102",
-            "hex": "0x066",
+            "hex": "0x66",
             "oct": "146",
             "bin": "01100110"
         },
@@ -932,7 +932,7 @@ const json = {
             "ascii": "g",
             "description": "",
             "dec": "103",
-            "hex": "0x067",
+            "hex": "0x67",
             "oct": "147",
             "bin": "01100111"
         },
@@ -941,7 +941,7 @@ const json = {
             "ascii": "h",
             "description": "",
             "dec": "104",
-            "hex": "0x068",
+            "hex": "0x68",
             "oct": "150",
             "bin": "01101000"
         },
@@ -950,7 +950,7 @@ const json = {
             "ascii": "i",
             "description": "",
             "dec": "105",
-            "hex": "0x069",
+            "hex": "0x69",
             "oct": "151",
             "bin": "01101001"
         },
@@ -959,7 +959,7 @@ const json = {
             "ascii": "j",
             "description": "",
             "dec": "106",
-            "hex": "0x06a",
+            "hex": "0x6a",
             "oct": "152",
             "bin": "01101010"
         },
@@ -968,7 +968,7 @@ const json = {
             "ascii": "k",
             "description": "",
             "dec": "107",
-            "hex": "0x06b",
+            "hex": "0x6b",
             "oct": "153",
             "bin": "01101011"
         },
@@ -977,7 +977,7 @@ const json = {
             "ascii": "l",
             "description": "",
             "dec": "108",
-            "hex": "0x06c",
+            "hex": "0x6c",
             "oct": "154",
             "bin": "01101100"
         },
@@ -986,7 +986,7 @@ const json = {
             "ascii": "m",
             "description": "",
             "dec": "109",
-            "hex": "0x06d",
+            "hex": "0x6d",
             "oct": "155",
             "bin": "01101101"
         },
@@ -995,7 +995,7 @@ const json = {
             "ascii": "n",
             "description": "",
             "dec": "110",
-            "hex": "0x06e",
+            "hex": "0x6e",
             "oct": "156",
             "bin": "01101110"
         },
@@ -1004,7 +1004,7 @@ const json = {
             "ascii": "o",
             "description": "",
             "dec": "111",
-            "hex": "0x06f",
+            "hex": "0x6f",
             "oct": "157",
             "bin": "01101111"
         },
@@ -1013,7 +1013,7 @@ const json = {
             "ascii": "p",
             "description": "",
             "dec": "112",
-            "hex": "0x070",
+            "hex": "0x70",
             "oct": "160",
             "bin": "01110000"
         },
@@ -1022,7 +1022,7 @@ const json = {
             "ascii": "q",
             "description": "",
             "dec": "113",
-            "hex": "0x071",
+            "hex": "0x71",
             "oct": "161",
             "bin": "01110001"
         },
@@ -1031,7 +1031,7 @@ const json = {
             "ascii": "r",
             "description": "",
             "dec": "114",
-            "hex": "0x072",
+            "hex": "0x72",
             "oct": "162",
             "bin": "01110010"
         },
@@ -1040,7 +1040,7 @@ const json = {
             "ascii": "s",
             "description": "",
             "dec": "115",
-            "hex": "0x073",
+            "hex": "0x73",
             "oct": "163",
             "bin": "01110011"
         },
@@ -1049,7 +1049,7 @@ const json = {
             "ascii": "t",
             "description": "",
             "dec": "116",
-            "hex": "0x074",
+            "hex": "0x74",
             "oct": "164",
             "bin": "01110100"
         },
@@ -1058,7 +1058,7 @@ const json = {
             "ascii": "u",
             "description": "",
             "dec": "117",
-            "hex": "0x075",
+            "hex": "0x75",
             "oct": "165",
             "bin": "01110101"
         },
@@ -1067,7 +1067,7 @@ const json = {
             "ascii": "v",
             "description": "",
             "dec": "118",
-            "hex": "0x076",
+            "hex": "0x76",
             "oct": "166",
             "bin": "01110110"
         },
@@ -1076,7 +1076,7 @@ const json = {
             "ascii": "w",
             "description": "",
             "dec": "119",
-            "hex": "0x077",
+            "hex": "0x77",
             "oct": "167",
             "bin": "01110111"
         },
@@ -1085,7 +1085,7 @@ const json = {
             "ascii": "x",
             "description": "",
             "dec": "120",
-            "hex": "0x078",
+            "hex": "0x78",
             "oct": "170",
             "bin": "01111000"
         },
@@ -1094,7 +1094,7 @@ const json = {
             "ascii": "y",
             "description": "",
             "dec": "121",
-            "hex": "0x079",
+            "hex": "0x79",
             "oct": "171",
             "bin": "01111001"
         },
@@ -1103,7 +1103,7 @@ const json = {
             "ascii": "z",
             "description": "",
             "dec": "122",
-            "hex": "0x07a",
+            "hex": "0x7a",
             "oct": "172",
             "bin": "01111010"
         },
@@ -1112,7 +1112,7 @@ const json = {
             "ascii": "{",
             "description": "",
             "dec": "123",
-            "hex": "0x07b",
+            "hex": "0x7b",
             "oct": "173",
             "bin": "01111011"
         },
@@ -1121,7 +1121,7 @@ const json = {
             "ascii": "|",
             "description": "",
             "dec": "124",
-            "hex": "0x07c",
+            "hex": "0x7c",
             "oct": "174",
             "bin": "01111100"
         },
@@ -1130,7 +1130,7 @@ const json = {
             "ascii": "}",
             "description": "",
             "dec": "125",
-            "hex": "0x07d",
+            "hex": "0x7d",
             "oct": "175",
             "bin": "01111101"
         },
@@ -1139,7 +1139,7 @@ const json = {
             "ascii": "~",
             "description": "",
             "dec": "126",
-            "hex": "0x07e",
+            "hex": "0x7e",
             "oct": "176",
             "bin": "01111110"
         },
@@ -1148,7 +1148,7 @@ const json = {
             "ascii": "DEL",
             "description": "",
             "dec": "127",
-            "hex": "0x07f",
+            "hex": "0x7f",
             "oct": "177",
             "bin": "01111111"
         }
