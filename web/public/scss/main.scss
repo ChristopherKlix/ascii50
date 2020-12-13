@@ -38,7 +38,7 @@ html {
 #header {
     // grid setup
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
         "title cmd duck"
@@ -60,8 +60,8 @@ html {
 
         .hint {
             color: #888888;
-            padding-left: 1rem;
             font-size: small;
+            text-align: center;
         }
         
         #command-line-wrapper {
@@ -188,7 +188,11 @@ table {
 
             &.number {
                 color: rgba($color: #ffffff, $alpha: 0.2);
-                cursor: default;
+                
+                &:hover {
+                    background-color: rgba($color: $green, $alpha: 0.6);
+                    cursor: pointer;
+                }
             }
 
             &.char {
