@@ -11,6 +11,7 @@
     <script defer src="./js/main.js"></script>
     <script defer src="./js/init.js"></script>
     <script defer src="./js/duck.js"></script>
+    <script defer src="./js/command_line.js"></script>
 
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -27,7 +28,7 @@
     <div id="wrapper">
 
         <!-- HEADER -- grid -->
-        <!-- therefore HTML order is 'ignore' and rearranged by CSS -->
+        <!-- therefore HTML order is 'ignored' and rearranged by CSS -->
         <div id="header">
 
             <!-- grid-area: title -->
@@ -45,7 +46,7 @@
 
             <!-- grid-area: cmd -->
             <div id="command">
-                <p class="hint">Try typing 'ascii50 hexadecimal'</p>
+                <p class="hint">Try typing 'hex'</p>
                 <div id="command-line-wrapper">
                     <span>$</span>
                     <input id="command-line" type="text" autofocus>
@@ -55,11 +56,11 @@
             <!-- grid-area: copymode -->
             <div id="copy-mode-wrapper">
                 <div id="copy-mode-label">
-                    <p>copy to clipboard</p>
+                    <p>Click to copy</p>
                 </div>
                 <div id="copy-mode">
-                    <div id="copy-mode-int">integer</div>
-                    <div id="copy-mode-char">character</div>
+                    <div id="copy-mode-int">0-127</div>
+                    <div id="copy-mode-char">128-255</div>
                 </div>
             </div>
         </div>
@@ -70,8 +71,8 @@
 
         <!-- CREDIT -->
         <div id="credit">
-            <p>Copyright © 2020 Christopher Klix. All rights reserved</p>
-            <p>No official CS50 service - see <a href="https://github.com/ChristopherKlix/ascii50/" target="blank">GitHub</a> for more details.</p>
+            <p>Copyright © 2020 Christopher Klix. All rights reserved.</p>
+            <p>No official CS50 service - see <a href="https://github.com/ChristopherKlix/ascii50/" target="blank">GitHub Repo</a> for more details.</p>
         </div>
     </div>
 </body>
