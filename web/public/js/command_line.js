@@ -1,0 +1,62 @@
+/* COMMAND LINE */
+
+// Get reference to input 'command-line'
+const command_line = document.getElementById('command-line');
+
+// Regular expressions!!!!!! yay...
+//     Set ASCII code to decimal
+//     Set ASCII code to hexadecimal
+//     Set ASCII code to octal
+//     Redirect to Git rep
+//     Follow the white rabbit.
+
+// Regex
+const re_decimal = /^(ascii50\s+)?dec(imal)?$/i;
+const re_hexadecimal = /^(ascii50\s+)?hex(adecimal)?$/i;
+const re_octal = /^(ascii50\s+)?oct(al)?$/i;
+const re_binary = /^(ascii50\s+)?bin(ary)?$/i;
+const re_source = /^ascii50\s+((source(code)?)|(git(hub)?))$/i;
+const re_matrix = /^ascii50\s+matrix$/i;
+// const commands = {
+//     re_decimal: 'decimal',
+//     re_hexadecimal: 'hexadecimal',
+//     re_octal: 'octal',
+//     re_source: 'source',
+//     re_matrix: 'matrix'
+// };
+
+// Command-line logic
+command_line.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        if (command_line.value.search(re_decimal) != -1) {
+            create_table('dec');
+        } else if (command_line.value.search(re_hexadecimal) != -1) {
+            create_table('hex');
+        } else if (command_line.value.search(re_octal) != -1) {
+            create_table('oct');
+        } else if (command_line.value.search(re_binary) != -1) {
+            create_table('bin');
+        } else if (command_line.value.search(re_source) != -1) {
+            window.location.href = 'https://google.com';
+        } else if (command_line.value.search(re_matrix) != -1) {
+            matrix();
+        }
+
+        // Clear command line
+        command_line.value = '';
+    }
+});
+
+/* end */
+
+// for (let command in commands) {
+//     if (command_line.value.search(command) != -1) {
+//         command(commands[command])
+//     }
+// }
+
+// function command(command) {
+//     if (command === 'decimal') {
+//         setup_table('decimal')
+//     }
+// }
