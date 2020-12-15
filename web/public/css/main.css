@@ -54,15 +54,15 @@ html ::selection {
 #header #command #command-line-wrapper #command-line:focus {
   outline: none;
 }
-#header #copy-mode-wrapper {
+#header #nav-wrapper {
   grid-area: copymode;
 }
-#header #copy-mode-wrapper #copy-mode-label {
+#header #nav-wrapper #copy-tooltip {
   text-align: center;
   font-size: small;
   color: #888888;
 }
-#header #copy-mode-wrapper #copy-mode {
+#header #nav-wrapper #toggle-ascii-range-wrapper {
   background-color: #252525;
   width: 10rem;
   margin: auto;
@@ -74,14 +74,14 @@ html ::selection {
   line-height: 1.2rem;
   border-radius: 9px;
 }
-#header #copy-mode-wrapper #copy-mode :nth-child(n) {
+#header #nav-wrapper #toggle-ascii-range-wrapper :nth-child(n) {
   border-radius: 9px;
   cursor: pointer;
 }
-#header #copy-mode-wrapper #copy-mode #copy-mode-int {
+#header #nav-wrapper #toggle-ascii-range-wrapper #btn-128 {
   background-color: #a3b900;
 }
-#header #copy-mode-wrapper #copy-mode #copy-mode-char {
+#header #nav-wrapper #toggle-ascii-range-wrapper #btn-256 {
   background-color: none;
 }
 #header #duck-wrapper {

@@ -2,16 +2,13 @@
 
 // Command-line logic
 function init_command_line() {
-    // Get reference to input 'command-line'
-    const command_line = document.getElementById('command-line');
-
     // Regex
     const re_decimal = /^(ascii50\s+)?dec(imal)?$/i;
     const re_hexadecimal = /^(ascii50\s+)?hex(adecimal)?$/i;
     const re_octal = /^(ascii50\s+)?oct(al)?$/i;
     const re_binary = /^(ascii50\s+)?bin(ary)?$/i;
-    const re_source = /^ascii50\s+((source(code)?)|(git(hub)?))$/i;
-    const re_matrix = /^ascii50\s+matrix$/i;
+    const re_source = /^(ascii50\s+)?((source(code)?)|(git(hub)?))$/i;
+    const re_matrix = /^(ascii50\s+)?matrix$/i;
 
     // Logic
     command_line.addEventListener('keypress', function (e) {

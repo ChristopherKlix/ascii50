@@ -1,20 +1,14 @@
 /* DUCK LOGIC */
 
 function init_duck() {
-    // get reference to ddb
-    let duck = document.getElementById("duck");
-    // get reference to quack-put -- like output but for ducks
-    let quack_put = document.getElementById("quack-put");
-    
-    // add event listener to ddb to quack random ASCII when clicked
-    duck.addEventListener('click', quack);
+    return;
 }
 
-// actual quack function to quack random ASCII when clicked
+// Actual quack function to quack random ASCII when clicked
 function quack() {
     // 49 to 126
     // Math.random() returns value between 0 - 1
-    let char = (Math.random() * 77 + 49);
+    const char = (Math.random() * 77 + 49);
 
     // set quack-put to random char
     quack_put.innerHTML = String.fromCharCode(parseInt(char, 10));
@@ -25,10 +19,7 @@ function matrix() {
 }
 
 // Triggers 'copied' next to quack-put
-function copied(clipboard) {
-    // get reference to 'copied' element
-    const copied = document.getElementById("copied");
-
+function show_copied_char(clipboard) {
     // set initial animation duration for 'copied'
     copied.style.transition = 'opacity 0.1s';
     // trigger animation

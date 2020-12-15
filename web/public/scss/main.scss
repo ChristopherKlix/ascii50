@@ -89,17 +89,17 @@ html {
         }
     }
 
-    #copy-mode-wrapper {
+    #nav-wrapper {
         // assign grid id
         grid-area: copymode;
     
-        #copy-mode-label {
+        #copy-tooltip {
             text-align: center;
             font-size: small;
             color: #888888;
         }
         
-        #copy-mode {
+        #toggle-ascii-range-wrapper {
             background-color: $dark-accent;
             width: 10rem;
             margin: auto;
@@ -116,11 +116,11 @@ html {
                 cursor: pointer;
             }
         
-            #copy-mode-int {
+            #btn-128 {
                 background-color: $green;
             }
         
-            #copy-mode-char {
+            #btn-256 {
                 background-color: none;
             }
         }

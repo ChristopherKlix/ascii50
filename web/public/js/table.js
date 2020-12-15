@@ -1,12 +1,13 @@
 /* TABLE LOGIC */
 
 function init_table() {
-    create_table('dec');
+    // State of ASCII range -- either '128' or '256'
+    ascii_range = '128';
+
+    create_table(ascii_type='dec', ascii_range=ascii_range);
 }
 
-function create_table(ascii_type) {
-    // Get reference to table element
-    const table = document.getElementById('table');
+function create_table(ascii_type, ascii_range) {
     // Clearing table to redraw
     table.innerHTML = '';
 
@@ -54,5 +55,18 @@ function create_table(ascii_type) {
                 copy_to_clipboard(cell_id, ascii_char)
             });
         }
+    }
+}
+
+// Changing ASCII range from '128' to '256' and vice versa
+function toggle_ascii_range() {
+    if (ascii_range === '128') {
+        btn_128.style.backgroundColor = 'rgba(163, 185, 0, 0)';
+        btn_256.style.backgroundColor = 'rgba(163, 185, 0, 1)';
+        ascii_range = '256';
+    } else {
+        btn_128.style.backgroundColor = 'rgba(163, 185, 0, 1)';
+        btn_256.style.backgroundColor = 'rgba(163, 185, 0, 0)';
+        ascii_range = '128';
     }
 }
