@@ -1,12 +1,14 @@
 /* DUCK LOGIC */
 
-// get reference to ddb
-let duck = document.getElementById("duck");
-// get reference to quack-put -- like output but for ducks
-let quack_put = document.getElementById("quack-put");
-
-// add event listener to ddb to quack random ASCII when clicked
-duck.addEventListener('click', quack);
+function init_duck() {
+    // get reference to ddb
+    let duck = document.getElementById("duck");
+    // get reference to quack-put -- like output but for ducks
+    let quack_put = document.getElementById("quack-put");
+    
+    // add event listener to ddb to quack random ASCII when clicked
+    duck.addEventListener('click', quack);
+}
 
 // actual quack function to quack random ASCII when clicked
 function quack() {

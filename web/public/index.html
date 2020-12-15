@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Linking css file -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 
-    <!-- Linking main.js file -->
+    <!-- JavaScript -->
+    <!-- Exec JS after DOM has been fully loaded -->
     <script defer src="./js/json.js"></script>
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/init.js"></script>
+    <script defer src="./js/clipboard.js"></script>
     <script defer src="./js/duck.js"></script>
     <script defer src="./js/command_line.js"></script>
+    <script defer src="./js/table.js"></script>
+    <!-- Init needs to be exec last -->
+    <!-- Calls all previously defined init functions -->
+    <script defer src="./js/init.js"></script>
 
     <!-- Firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
