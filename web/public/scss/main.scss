@@ -3,6 +3,9 @@
 
 // define variables
 $column-width: 5.5%;
+$table-border-radius: 0.6rem;
+
+// colors
 $green: rgb(163, 185, 0);
 $blue: rgb(21, 54, 73);
 $dark: rgb(48, 49, 48);
@@ -42,7 +45,7 @@ html {
     grid-template-rows: auto auto;
     grid-template-areas:
         "title cmd duck"
-        "title copymode duck"
+        "title nav duck"
     ;
 
     #title {
@@ -91,7 +94,7 @@ html {
 
     #nav-wrapper {
         // assign grid id
-        grid-area: copymode;
+        grid-area: nav;
     
         #copy-tooltip {
             text-align: center;
@@ -176,6 +179,24 @@ html {
 table {
     table-layout: fixed;
     margin: auto;
+
+    tr:nth-child(1) {
+        td:nth-child(1) {
+            border-radius: $table-border-radius 0 0 0;
+        }
+        td:nth-child(16) {
+            border-radius: 0 $table-border-radius 0 0;
+        }
+    }
+
+    tr:nth-child(16) {
+        td:nth-child(1) {
+            border-radius: 0 0 0 $table-border-radius;
+        }
+        td:nth-child(16) {
+            border-radius: 0 0 $table-border-radius 0;
+        }
+    }
 
     tr {
         overflow: hidden;

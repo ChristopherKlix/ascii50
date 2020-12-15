@@ -11,6 +11,7 @@ const btn_256 = document.getElementById('btn-256');
 const duck = document.getElementById("duck");
 const quack_put = document.getElementById("quack-put");
 const copied = document.getElementById("copied");
+const greeting = document.getElementById("greeting");
 
 // Event Listeners
 btn_128.addEventListener('click', toggle_ascii_range);
@@ -27,3 +28,7 @@ init_duck();
 
 // Easter egg
 console.log('Hey. Yeah, you...')
+
+function change_greeting(text) {
+    greeting.innerHTML = text;
+}

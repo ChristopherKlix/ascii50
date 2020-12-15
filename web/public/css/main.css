@@ -16,7 +16,7 @@ html ::selection {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "title cmd duck" "title copymode duck";
+  grid-template-areas: "title cmd duck" "title nav duck";
 }
 #header #title {
   grid-area: title;
@@ -55,7 +55,7 @@ html ::selection {
   outline: none;
 }
 #header #nav-wrapper {
-  grid-area: copymode;
+  grid-area: nav;
 }
 #header #nav-wrapper #copy-tooltip {
   text-align: center;
@@ -127,6 +127,18 @@ html ::selection {
 table {
   table-layout: fixed;
   margin: auto;
+}
+table tr:nth-child(1) td:nth-child(1) {
+  border-radius: 0.6rem 0 0 0;
+}
+table tr:nth-child(1) td:nth-child(16) {
+  border-radius: 0 0.6rem 0 0;
+}
+table tr:nth-child(16) td:nth-child(1) {
+  border-radius: 0 0 0 0.6rem;
+}
+table tr:nth-child(16) td:nth-child(16) {
+  border-radius: 0 0 0.6rem 0;
 }
 table tr {
   overflow: hidden;

@@ -15,12 +15,16 @@ function init_command_line() {
         if (e.key === 'Enter') {
             if (command_line.value.search(re_decimal) != -1) {
                 create_table('dec');
+                change_greeting('72 73 33');
             } else if (command_line.value.search(re_hexadecimal) != -1) {
                 create_table('hex');
+                change_greeting('0x48 0x49 0x21');
             } else if (command_line.value.search(re_octal) != -1) {
                 create_table('oct');
+                change_greeting('110 111 41');
             } else if (command_line.value.search(re_binary) != -1) {
                 create_table('bin');
+                change_greeting('01001000 01001001 00100001');
             } else if (command_line.value.search(re_source) != -1) {
                 window.location.href = 'https://google.com';
             } else if (command_line.value.search(re_matrix) != -1) {
