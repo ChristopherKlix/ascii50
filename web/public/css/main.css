@@ -105,6 +105,7 @@ html ::-webkit-scrollbar {
   transition: opacity 0.1s;
 }
 #header #duck-wrapper #quack-put {
+  position: relative;
   width: 80px;
   padding: 0.3rem 0;
   margin: 0;
@@ -117,6 +118,15 @@ html ::-webkit-scrollbar {
   float: left;
   line-height: 30px;
   border-radius: 9px;
+}
+#header #duck-wrapper #quack-put::after {
+  content: " ";
+  position: absolute;
+  left: 100%;
+  margin-left: -5px;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #252525;
 }
 #header #duck-wrapper #duck {
   display: inline;
@@ -150,7 +160,9 @@ table tr {
   background-color: #252525;
 }
 table tr td {
+  display: table-cell !important;
   width: 4vw;
+  transition: background-color 0.1s;
 }
 table tr td.number {
   color: rgba(255, 255, 255, 0.2);
@@ -161,6 +173,9 @@ table tr td.number:hover {
 }
 table tr td.char:hover {
   background-color: #a3b900;
+  cursor: default;
+}
+table tr td.char:hover.pointer {
   cursor: pointer;
 }
 

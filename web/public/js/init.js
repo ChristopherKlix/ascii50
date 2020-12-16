@@ -1,7 +1,9 @@
 /* Run all initializer functions */
 
 // Global variables
+// The state of the current ASCII range & type
 let ascii_range;
+let ascii_type;
 
 // References
 const command_line = document.getElementById('command-line');
@@ -14,21 +16,20 @@ const copied = document.getElementById("copied");
 const greeting = document.getElementById("greeting");
 
 // Event Listeners
-btn_128.addEventListener('click', toggle_ascii_range);
-btn_256.addEventListener('click', toggle_ascii_range);
+btn_128.addEventListener('click', function(){
+    toggle_ascii_range('128')}, false);
+btn_256.addEventListener('click', function(){
+    toggle_ascii_range('256')}, false);
+    
 duck.addEventListener('click', quack);
 
-// Run initial table setup
-// & table logic w/ event listener
-init_table();
 // Run command line logic w/ event listener
 init_command_line();
 // Run duck logic w/ event listener
 init_duck();
+// Run initial table setup
+// & table logic w/ event listener
+init_table();
 
 // Easter egg
 console.log('Hey. Yeah, you...')
-
-function change_greeting(text) {
-    greeting.innerHTML = text;
-}

@@ -1,17 +1,17 @@
-// import Source Sans Pro font
+// Import Source Sans Pro font
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
 
-// define variables
+// Define variables
 $column-width: 5.5%;
 $table-border-radius: 0.6rem;
 
-// colors
+// Define colors
 $green: rgb(163, 185, 0);
 $blue: rgb(21, 54, 73);
 $dark: rgb(48, 49, 48);
 $dark-accent: rgb(37, 37, 37);
 
-// calculate relative width multiplier
+// Calculate relative width multiplier
 @function get-vw($target) { 
     $vw-context: (1000*.01) * 1px;
     @return ($target/$vw-context) * 1vw;
@@ -120,6 +120,7 @@ html {
             
             :nth-child(n) {
                 border-radius: 9px;
+                // transition: background-color 0.3s;
                 cursor: pointer;
             }
         
@@ -155,6 +156,7 @@ html {
         }
     
         #quack-put {
+            position: relative;
             width: 80px;
             padding: .3rem 0;
             margin: 0;
@@ -167,6 +169,16 @@ html {
             float: left;
             line-height: 30px;
             border-radius: 9px;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                left: 100%;
+                margin-left: -5px;
+                border-width: 0.8rem;
+                border-style: solid;
+                border-color: transparent transparent transparent $dark-accent;
+            }
         }
     
         #duck {    
@@ -209,7 +221,9 @@ table {
         background-color: $dark-accent;
 
         td {
+            display: table-cell !important;
             width: get-vw(40px);
+            transition: background-color 0.1s;
 
             &.number {
                 color: rgba($color: #ffffff, $alpha: 0.2);
@@ -224,7 +238,11 @@ table {
 
                 &:hover {
                     background-color: $green;
-                    cursor: pointer;
+                    cursor: default;
+
+                    &.pointer {
+                        cursor: pointer;
+                    }
                 }
             }
 

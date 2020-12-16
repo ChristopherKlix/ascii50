@@ -36,3 +36,7 @@ function init_command_line() {
         }
     });
 }
+
+function change_greeting(text) {
+    greeting.innerHTML = text;
+}
