@@ -11,6 +11,9 @@ html a {
 html ::selection {
   background: #a3b900 !important;
 }
+html ::-webkit-scrollbar {
+  display: none;
+}
 
 #header {
   display: grid;

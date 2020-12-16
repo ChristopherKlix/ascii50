@@ -35,6 +35,10 @@ html {
     ::selection {
         background: $green !important;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 // header styles
