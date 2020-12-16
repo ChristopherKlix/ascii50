@@ -8,6 +8,10 @@ function init_table() {
 }
 
 function create_table(ascii_type, ascii_range) {
+    if (ascii_range == '256') {
+        table.innerHTML = 'coming soon';
+        return
+    }
     // Clearing table to redraw
     table.innerHTML = '';
 
@@ -69,4 +73,6 @@ function toggle_ascii_range() {
         btn_256.style.backgroundColor = 'rgba(163, 185, 0, 0)';
         ascii_range = '128';
     }
+    
+    create_table(ascii_type='dec', ascii_range=ascii_range);
 }
