@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 
     <!-- JavaScript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Exec JS after DOM has been fully loaded -->
     <script defer src="./js/json.js"></script>
     <script defer src="./js/clipboard.js"></script>
@@ -62,8 +64,8 @@
 
             <!-- grid-area: nav -->
             <div id="nav-wrapper">
-                <div id="copy-tooltip">
-                    <p>Click to copy</p>
+                <div id="copy-tooltip-wrapper">
+                    <p id="copy-tooltip">Click to copy</p>
                 </div>
                 <div id="toggle-ascii-range-wrapper">
                     <div id="btn-128">0-127</div>

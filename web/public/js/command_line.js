@@ -9,6 +9,7 @@ function init_command_line() {
     const re_binary = /^(ascii50\s+)?bin(ary)?$/i;
     const re_source = /^(ascii50\s+)?((source(code)?)|(git(hub)?))$/i;
     const re_matrix = /^(ascii50\s+)?matrix$/i;
+    const re_buh = /^buh$/i;
 
     // Logic
     command_line.addEventListener('keypress', function (e) {
@@ -29,6 +30,8 @@ function init_command_line() {
                 window.location.href = 'https://google.com';
             } else if (command_line.value.search(re_matrix) != -1) {
                 matrix();
+            } else if (command_line.value.search(re_buh) != -1) {
+                buh();
             }
     
             // Clear command line

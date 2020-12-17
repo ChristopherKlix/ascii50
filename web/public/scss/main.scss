@@ -75,6 +75,7 @@ html {
             font-size: large;
             background-color: rgb(37, 37, 37);
             border-radius: 9px;
+            // border: 3px #1f1f1f solid;
             padding-left: 1rem;
             padding-right: 1rem;
             margin-bottom: 1rem;
@@ -84,7 +85,6 @@ html {
                 background-color: rgb(37, 37, 37);
                 color: #ffffff;
                 font-size: large;
-                //width: 6rem;
                 border-radius: 9px;
                 border-style: none;
                 padding: .5rem;
@@ -100,7 +100,7 @@ html {
         // assign grid id
         grid-area: nav;
     
-        #copy-tooltip {
+        #copy-tooltip-wrapper {
             text-align: center;
             font-size: small;
             color: #888888;
@@ -221,6 +221,7 @@ table {
         background-color: $dark-accent;
 
         td {
+            position: relative;
             display: table-cell !important;
             width: get-vw(40px);
             transition: background-color 0.1s;
@@ -246,6 +247,39 @@ table {
                 }
             }
 
+            .tooltip {
+                position: fixed;
+                top: 130px;
+                // bottom: 150%;
+                left: 200px;
+                visibility: hidden;
+                
+                width: 250px;
+                padding: 0.6rem 0.8rem;
+                // margin-left: -60px;
+                border-radius: 6px;
+                
+                background-color: $dark-accent;
+                color: #fff;
+                text-align: center;
+              
+                z-index: 1;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: $dark-accent transparent transparent transparent;
+                }
+            }
+
+            &:hover .tooltip {
+                visibility: visible;
+            }
         }
     }
 }

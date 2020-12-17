@@ -34,6 +34,7 @@ function create_table(type, range) {
             // Initialized in json.js file
             const ascii_code = json["128"][(columns * (column / 2) + row).toString()][ascii_type];
             const ascii_char = json["128"][(columns * (column / 2) + row).toString()]["ascii"];
+            const ascii_description = json["128"][(columns * (column / 2) + row).toString()]["description"];
             const ascii_cc = json["128"][(columns * (column / 2) + row).toString()]["is_cc"];
             
             // Create first cell -- ASCII code
@@ -52,6 +53,7 @@ function create_table(type, range) {
             cell_char = new_row.insertCell(column + 1);
             cell_char.id = 'ascii_char_' + ascii_code;
             cell_char.className = ascii_cc ? 'char' : 'char pointer';
+            // cell_char.innerHTML = ascii_cc ? ascii_char + '<span class="tooltip">' + ascii_description + '</span>' : ascii_char;
             cell_char.innerHTML = ascii_char;
 
             // Trigger 'copy_to_clipboard' on click
@@ -65,6 +67,19 @@ function create_table(type, range) {
                     const cell_id = 'ascii_char_' + ascii_code;
                     copy_to_clipboard(cell_id, ascii_char)
                 });
+            } else {
+                const DOM_copy_tooltip = $("#copy-tooltip");
+                const copy_tooltip_default = DOM_copy_tooltip.text();
+
+                if (ascii_description != '') {
+                    $("#" + cell_char.id).mouseenter(function() {
+                        $("#copy-tooltip").text(ascii_description);
+                    });
+    
+                    $("#" + cell_char.id).mouseleave(function() {
+                        DOM_copy_tooltip.text(copy_tooltip_default);
+                    });
+                }
             }
         }
     }
@@ -87,4 +102,14 @@ function toggle_ascii_range(button) {
     }
 
     create_table(ascii_type=ascii_type, ascii_range=ascii_range);
+}
+
+function buh() {
+    quack_put.innerHTML = '&#x1F47B';
+
+    $("td").each(function() {
+        $( this ).addClass('shake-chunk shake-constant');
+    })
+
+    $("#copy-tooltip").text('aaaaaaahhhhhhhh!!!!!!');
 }

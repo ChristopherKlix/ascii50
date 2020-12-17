@@ -75,7 +75,7 @@ const json = {
         "8": {
             "is_cc": true,
             "ascii": "BS",
-            "description": "It is not to insult someone. It is the control character for Backspace.",
+            "description": "The control character for Backspace.",
             "dec": "8",
             "hex": "0x08",
             "oct": "10",
@@ -84,7 +84,7 @@ const json = {
         "9": {
             "is_cc": true,
             "ascii": "HT",
-            "description": "",
+            "description": "The control character for Horizontal Tab.",
             "dec": "9",
             "hex": "0x09",
             "oct": "11",
@@ -93,7 +93,7 @@ const json = {
         "10": {
             "is_cc": true,
             "ascii": "LF",
-            "description": "",
+            "description": "The control character for Line Feed.",
             "dec": "10",
             "hex": "0x0a",
             "oct": "12",
@@ -102,7 +102,7 @@ const json = {
         "11": {
             "is_cc": true,
             "ascii": "VT",
-            "description": "",
+            "description": "The control character for Vertical Tab.",
             "dec": "11",
             "hex": "0x0b",
             "oct": "13",
@@ -111,7 +111,7 @@ const json = {
         "12": {
             "is_cc": true,
             "ascii": "FF",
-            "description": "",
+            "description": "The control character for Form Feed.",
             "dec": "12",
             "hex": "0x0c",
             "oct": "14",
@@ -120,7 +120,7 @@ const json = {
         "13": {
             "is_cc": true,
             "ascii": "CR",
-            "description": "",
+            "description": "The control character for Carriage Return.",
             "dec": "13",
             "hex": "0x0d",
             "oct": "15",
@@ -129,7 +129,7 @@ const json = {
         "14": {
             "is_cc": true,
             "ascii": "SO",
-            "description": "",
+            "description": "The control character for Shift Out,",
             "dec": "14",
             "hex": "0x0e",
             "oct": "16",
@@ -138,7 +138,7 @@ const json = {
         "15": {
             "is_cc": true,
             "ascii": "SI",
-            "description": "",
+            "description": "The control character for Shift In.",
             "dec": "15",
             "hex": "0x0f",
             "oct": "17",
@@ -147,7 +147,7 @@ const json = {
         "16": {
             "is_cc": true,
             "ascii": "DLE",
-            "description": "",
+            "description": "The control character for Data Link Escape.",
             "dec": "16",
             "hex": "0x10",
             "oct": "20",
@@ -156,7 +156,7 @@ const json = {
         "17": {
             "is_cc": true,
             "ascii": "DC1",
-            "description": "",
+            "description": "The control character for Device Control 1.",
             "dec": "17",
             "hex": "0x11",
             "oct": "21",
@@ -165,7 +165,7 @@ const json = {
         "18": {
             "is_cc": true,
             "ascii": "DC2",
-            "description": "",
+            "description": "The control character for Device Control 2.",
             "dec": "18",
             "hex": "0x12",
             "oct": "22",
@@ -174,7 +174,7 @@ const json = {
         "19": {
             "is_cc": true,
             "ascii": "DC3",
-            "description": "",
+            "description": "The control character for Device Control 3.",
             "dec": "19",
             "hex": "0x13",
             "oct": "23",
@@ -183,7 +183,7 @@ const json = {
         "20": {
             "is_cc": true,
             "ascii": "DC4",
-            "description": "",
+            "description": "The control character for Device Control 4.",
             "dec": "20",
             "hex": "0x14",
             "oct": "24",
@@ -192,7 +192,7 @@ const json = {
         "21": {
             "is_cc": true,
             "ascii": "NAK",
-            "description": "",
+            "description": "Negative-Acknowledgement.",
             "dec": "21",
             "hex": "0x15",
             "oct": "25",
@@ -201,7 +201,7 @@ const json = {
         "22": {
             "is_cc": true,
             "ascii": "SYN",
-            "description": "",
+            "description": "The control character for Synchronous Idle.",
             "dec": "22",
             "hex": "0x16",
             "oct": "26",
@@ -210,7 +210,7 @@ const json = {
         "23": {
             "is_cc": true,
             "ascii": "ETB",
-            "description": "",
+            "description": "End of Transmission Block.",
             "dec": "23",
             "hex": "0x17",
             "oct": "27",
@@ -219,7 +219,7 @@ const json = {
         "24": {
             "is_cc": true,
             "ascii": "CAN",
-            "description": "",
+            "description": "The control character for Cancel.",
             "dec": "24",
             "hex": "0x18",
             "oct": "30",
@@ -228,7 +228,7 @@ const json = {
         "25": {
             "is_cc": true,
             "ascii": "EM",
-            "description": "",
+            "description": "The control character for End of Medium.",
             "dec": "25",
             "hex": "0x19",
             "oct": "31",
@@ -237,7 +237,7 @@ const json = {
         "26": {
             "is_cc": true,
             "ascii": "SUB",
-            "description": "",
+            "description": "The control character for Substitute.",
             "dec": "26",
             "hex": "0x1a",
             "oct": "32",
@@ -246,7 +246,7 @@ const json = {
         "27": {
             "is_cc": true,
             "ascii": "ESC",
-            "description": "",
+            "description": "Escape.",
             "dec": "27",
             "hex": "0x1b",
             "oct": "33",
@@ -255,7 +255,7 @@ const json = {
         "28": {
             "is_cc": true,
             "ascii": "FS",
-            "description": "",
+            "description": "File Separator.",
             "dec": "28",
             "hex": "0x1c",
             "oct": "34",
@@ -264,7 +264,7 @@ const json = {
         "29": {
             "is_cc": true,
             "ascii": "GS",
-            "description": "",
+            "description": "Group Separator.",
             "dec": "29",
             "hex": "0x1d",
             "oct": "35",
@@ -273,7 +273,7 @@ const json = {
         "30": {
             "is_cc": true,
             "ascii": "RS",
-            "description": "",
+            "description": "Record Separator.",
             "dec": "30",
             "hex": "0x1e",
             "oct": "36",
@@ -282,7 +282,7 @@ const json = {
         "31": {
             "is_cc": true,
             "ascii": "US",
-            "description": "",
+            "description": "Unit Separator.",
             "dec": "31",
             "hex": "0x1f",
             "oct": "37",
@@ -291,7 +291,7 @@ const json = {
         "32": {
             "is_cc": true,
             "ascii": "SP",
-            "description": "",
+            "description": "Space. (not considered Control Character)",
             "dec": "32",
             "hex": "0x20",
             "oct": "40",
@@ -1146,7 +1146,7 @@ const json = {
         "127": {
             "is_cc": true,
             "ascii": "DEL",
-            "description": "",
+            "description": "Delete.",
             "dec": "127",
             "hex": "0x7f",
             "oct": "177",

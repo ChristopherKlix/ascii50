@@ -60,7 +60,7 @@ html ::-webkit-scrollbar {
 #header #nav-wrapper {
   grid-area: nav;
 }
-#header #nav-wrapper #copy-tooltip {
+#header #nav-wrapper #copy-tooltip-wrapper {
   text-align: center;
   font-size: small;
   color: #888888;
@@ -160,6 +160,7 @@ table tr {
   background-color: #252525;
 }
 table tr td {
+  position: relative;
   display: table-cell !important;
   width: 4vw;
   transition: background-color 0.1s;
@@ -177,6 +178,32 @@ table tr td.char:hover {
 }
 table tr td.char:hover.pointer {
   cursor: pointer;
+}
+table tr td .tooltip {
+  position: fixed;
+  top: 130px;
+  left: 200px;
+  visibility: hidden;
+  width: 250px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+table tr td .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #252525 transparent transparent transparent;
+}
+table tr td:hover .tooltip {
+  visibility: visible;
 }
 
 #credit {

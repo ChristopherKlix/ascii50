@@ -4,12 +4,13 @@
 // The state of the current ASCII range & type
 let ascii_range;
 let ascii_type;
+let show_ascii_description;
 
 // References
-const command_line = document.getElementById('command-line');
-const table = document.getElementById('table');
-const btn_128 = document.getElementById('btn-128');
-const btn_256 = document.getElementById('btn-256');
+const command_line = document.getElementById("command-line");
+const table = document.getElementById("table");
+const btn_128 = document.getElementById("btn-128");
+const btn_256 = document.getElementById("btn-256");
 const duck = document.getElementById("duck");
 const quack_put = document.getElementById("quack-put");
 const copied = document.getElementById("copied");
@@ -33,3 +34,5 @@ init_table();
 
 // Easter egg
 console.log('Hey. Yeah, you...')
+
+
