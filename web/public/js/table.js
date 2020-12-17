@@ -8,14 +8,11 @@ function init_table() {
     create_table(ascii_type=ascii_type, ascii_range=ascii_range);
 }
 
-function create_table(type, range) {
+function create_table(type=ascii_type, range=ascii_range) {
+    // Assign input values to global variables
     ascii_type = type;
     ascii_range = range;
 
-    if (ascii_range == '256') {
-        table.innerHTML = '<p>coming soon</p>';
-        return
-    }
     // Clearing table to redraw
     table.innerHTML = '';
 
@@ -32,10 +29,13 @@ function create_table(type, range) {
         for (let column = 0; column < columns; column += 2) {
             // Read ASCII code & ASCII character from json variable
             // Initialized in json.js file
-            const ascii_code = json["128"][(columns * (column / 2) + row).toString()][ascii_type];
-            const ascii_char = json["128"][(columns * (column / 2) + row).toString()]["ascii"];
-            const ascii_description = json["128"][(columns * (column / 2) + row).toString()]["description"];
-            const ascii_cc = json["128"][(columns * (column / 2) + row).toString()]["is_cc"];
+            const ascii_256 = (ascii_range == '256' ? 128 : 0);
+            const ascii_index = (columns * (column / 2) + row + ascii_256).toString();
+
+            const ascii_code        = json[ascii_range][ascii_index][ascii_type];
+            const ascii_char        = json[ascii_range][ascii_index]["ascii"];
+            const ascii_description = json[ascii_range][ascii_index]["description"];
+            const ascii_cc          = json[ascii_range][ascii_index]["is_cc"];
             
             // Create first cell -- ASCII code
             cell_code = new_row.insertCell(column);

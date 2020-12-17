@@ -1152,5 +1152,1159 @@ const json = {
             "oct": "177",
             "bin": "01111111"
         }
+    },
+    "256": {
+        "128": {
+            "is_cc": false,
+            "ascii": "Ç",
+            "description": "",
+            "dec": "128",
+            "hex": "0x80",
+            "oct": "200",
+            "bin": "10000000"
+        },
+        "129": {
+            "is_cc": false,
+            "ascii": "ü",
+            "description": "",
+            "dec": "129",
+            "hex": "0x81",
+            "oct": "201",
+            "bin": "10000001"
+        },
+        "130": {
+            "is_cc": false,
+            "ascii": "é",
+            "description": "",
+            "dec": "130",
+            "hex": "0x82",
+            "oct": "202",
+            "bin": "10000010"
+        },
+        "131": {
+            "is_cc": false,
+            "ascii": "â",
+            "description": "",
+            "dec": "131",
+            "hex": "0x83",
+            "oct": "203",
+            "bin": "10000011"
+        },
+        "132": {
+            "is_cc": false,
+            "ascii": "ä",
+            "description": "",
+            "dec": "132",
+            "hex": "0x84",
+            "oct": "204",
+            "bin": "10000100"
+        },
+        "133": {
+            "is_cc": false,
+            "ascii": "à",
+            "description": "",
+            "dec": "133",
+            "hex": "0x85",
+            "oct": "205",
+            "bin": "10000101"
+        },
+        "134": {
+            "is_cc": false,
+            "ascii": "å",
+            "description": "",
+            "dec": "134",
+            "hex": "0x86",
+            "oct": "206",
+            "bin": "10000110"
+        },
+        "135": {
+            "is_cc": false,
+            "ascii": "ç",
+            "description": "",
+            "dec": "135",
+            "hex": "0x87",
+            "oct": "207",
+            "bin": "10000111"
+        },
+        "136": {
+            "is_cc": false,
+            "ascii": "ê",
+            "description": "",
+            "dec": "136",
+            "hex": "0x88",
+            "oct": "210",
+            "bin": "10001000"
+        },
+        "137": {
+            "is_cc": false,
+            "ascii": "ë",
+            "description": "",
+            "dec": "137",
+            "hex": "0x89",
+            "oct": "211",
+            "bin": "10001001"
+        },
+        "138": {
+            "is_cc": false,
+            "ascii": "è",
+            "description": "",
+            "dec": "138",
+            "hex": "0x8a",
+            "oct": "212",
+            "bin": "10001010"
+        },
+        "139": {
+            "is_cc": false,
+            "ascii": "ï",
+            "description": "",
+            "dec": "139",
+            "hex": "0x8b",
+            "oct": "213",
+            "bin": "10001011"
+        },
+        "140": {
+            "is_cc": false,
+            "ascii": "î",
+            "description": "",
+            "dec": "140",
+            "hex": "0x8c",
+            "oct": "214",
+            "bin": "10001100"
+        },
+        "141": {
+            "is_cc": false,
+            "ascii": "ì",
+            "description": "",
+            "dec": "141",
+            "hex": "0x8d",
+            "oct": "215",
+            "bin": "10001101"
+        },
+        "142": {
+            "is_cc": false,
+            "ascii": "Ä",
+            "description": "",
+            "dec": "142",
+            "hex": "0x8e",
+            "oct": "216",
+            "bin": "10001110"
+        },
+        "143": {
+            "is_cc": false,
+            "ascii": "Å",
+            "description": "",
+            "dec": "143",
+            "hex": "0x8f",
+            "oct": "217",
+            "bin": "10001111"
+        },
+        "144": {
+            "is_cc": false,
+            "ascii": "É",
+            "description": "",
+            "dec": "144",
+            "hex": "0x90",
+            "oct": "220",
+            "bin": "10010000"
+        },
+        "145": {
+            "is_cc": false,
+            "ascii": "æ",
+            "description": "",
+            "dec": "145",
+            "hex": "0x91",
+            "oct": "221",
+            "bin": "10010001"
+        },
+        "146": {
+            "is_cc": false,
+            "ascii": "Æ",
+            "description": "",
+            "dec": "146",
+            "hex": "0x92",
+            "oct": "222",
+            "bin": "10010010"
+        },
+        "147": {
+            "is_cc": false,
+            "ascii": "ô",
+            "description": "",
+            "dec": "147",
+            "hex": "0x93",
+            "oct": "223",
+            "bin": "10010011"
+        },
+        "148": {
+            "is_cc": false,
+            "ascii": "ö",
+            "description": "",
+            "dec": "148",
+            "hex": "0x94",
+            "oct": "224",
+            "bin": "10010100"
+        },
+        "149": {
+            "is_cc": false,
+            "ascii": "ò",
+            "description": "",
+            "dec": "149",
+            "hex": "0x95",
+            "oct": "225",
+            "bin": "10010101"
+        },
+        "150": {
+            "is_cc": false,
+            "ascii": "û",
+            "description": "",
+            "dec": "150",
+            "hex": "0x96",
+            "oct": "226",
+            "bin": "10010110"
+        },
+        "151": {
+            "is_cc": false,
+            "ascii": "ù",
+            "description": "",
+            "dec": "151",
+            "hex": "0x97",
+            "oct": "227",
+            "bin": "10010111"
+        },
+        "152": {
+            "is_cc": false,
+            "ascii": "ÿ",
+            "description": "",
+            "dec": "152",
+            "hex": "0x98",
+            "oct": "230",
+            "bin": "10011000"
+        },
+        "153": {
+            "is_cc": false,
+            "ascii": "Ö",
+            "description": "",
+            "dec": "153",
+            "hex": "0x99",
+            "oct": "231",
+            "bin": "10011001"
+        },
+        "154": {
+            "is_cc": false,
+            "ascii": "Ü",
+            "description": "",
+            "dec": "154",
+            "hex": "0x9a",
+            "oct": "232",
+            "bin": "10011010"
+        },
+        "155": {
+            "is_cc": false,
+            "ascii": "ø",
+            "description": "",
+            "dec": "155",
+            "hex": "0x9b",
+            "oct": "233",
+            "bin": "10011011"
+        },
+        "156": {
+            "is_cc": false,
+            "ascii": "£",
+            "description": "",
+            "dec": "156",
+            "hex": "0x9c",
+            "oct": "234",
+            "bin": "10011100"
+        },
+        "157": {
+            "is_cc": false,
+            "ascii": "Ø",
+            "description": "",
+            "dec": "157",
+            "hex": "0x9d",
+            "oct": "235",
+            "bin": "10011101"
+        },
+        "158": {
+            "is_cc": false,
+            "ascii": "×",
+            "description": "Multiplication sign.",
+            "dec": "158",
+            "hex": "0x9e",
+            "oct": "236",
+            "bin": "10011110"
+        },
+        "159": {
+            "is_cc": false,
+            "ascii": "ƒ",
+            "description": "Function sign.",
+            "dec": "159",
+            "hex": "0x9f",
+            "oct": "237",
+            "bin": "10011111"
+        },
+        "160": {
+            "is_cc": false,
+            "ascii": "á",
+            "description": "",
+            "dec": "160",
+            "hex": "0xa0",
+            "oct": "240",
+            "bin": "10100000"
+        },
+        "161": {
+            "is_cc": false,
+            "ascii": "í",
+            "description": "",
+            "dec": "161",
+            "hex": "0xa1",
+            "oct": "241",
+            "bin": "10100001"
+        },
+        "162": {
+            "is_cc": false,
+            "ascii": "ó",
+            "description": "",
+            "dec": "162",
+            "hex": "0xa2",
+            "oct": "242",
+            "bin": "10100010"
+        },
+        "163": {
+            "is_cc": false,
+            "ascii": "ú",
+            "description": "",
+            "dec": "163",
+            "hex": "0xa3",
+            "oct": "243",
+            "bin": "10100011"
+        },
+        "164": {
+            "is_cc": false,
+            "ascii": "ñ",
+            "description": "",
+            "dec": "164",
+            "hex": "0xa4",
+            "oct": "244",
+            "bin": "10100100"
+        },
+        "165": {
+            "is_cc": false,
+            "ascii": "Ñ",
+            "description": "",
+            "dec": "165",
+            "hex": "0xa5",
+            "oct": "245",
+            "bin": "10100101"
+        },
+        "166": {
+            "is_cc": false,
+            "ascii": "ª",
+            "description": "",
+            "dec": "166",
+            "hex": "0xa6",
+            "oct": "246",
+            "bin": "10100110"
+        },
+        "167": {
+            "is_cc": false,
+            "ascii": "º",
+            "description": "",
+            "dec": "167",
+            "hex": "0xa7",
+            "oct": "247",
+            "bin": "10100111"
+        },
+        "168": {
+            "is_cc": false,
+            "ascii": "¿",
+            "description": "",
+            "dec": "168",
+            "hex": "0xa8",
+            "oct": "250",
+            "bin": "10101000"
+        },
+        "169": {
+            "is_cc": false,
+            "ascii": "®",
+            "description": "",
+            "dec": "169",
+            "hex": "0xa9",
+            "oct": "251",
+            "bin": "10101001"
+        },
+        "170": {
+            "is_cc": false,
+            "ascii": "¬",
+            "description": "",
+            "dec": "170",
+            "hex": "0xaa",
+            "oct": "252",
+            "bin": "10101010"
+        },
+        "171": {
+            "is_cc": false,
+            "ascii": "½",
+            "description": "",
+            "dec": "171",
+            "hex": "0xab",
+            "oct": "253",
+            "bin": "10101011"
+        },
+        "172": {
+            "is_cc": false,
+            "ascii": "¼",
+            "description": "",
+            "dec": "172",
+            "hex": "0xac",
+            "oct": "254",
+            "bin": "10101100"
+        },
+        "173": {
+            "is_cc": false,
+            "ascii": "¡",
+            "description": "",
+            "dec": "173",
+            "hex": "0xad",
+            "oct": "255",
+            "bin": "10101101"
+        },
+        "174": {
+            "is_cc": false,
+            "ascii": "«",
+            "description": "",
+            "dec": "174",
+            "hex": "0xae",
+            "oct": "256",
+            "bin": "10101110"
+        },
+        "175": {
+            "is_cc": false,
+            "ascii": "»",
+            "description": "",
+            "dec": "175",
+            "hex": "0xaf",
+            "oct": "257",
+            "bin": "10101111"
+        },
+        "176": {
+            "is_cc": false,
+            "ascii": "░",
+            "description": "",
+            "dec": "176",
+            "hex": "0xb0",
+            "oct": "260",
+            "bin": "10110000"
+        },
+        "177": {
+            "is_cc": false,
+            "ascii": "▒",
+            "description": "",
+            "dec": "177",
+            "hex": "0xb1",
+            "oct": "261",
+            "bin": "10110001"
+        },
+        "178": {
+            "is_cc": false,
+            "ascii": "▓",
+            "description": "",
+            "dec": "178",
+            "hex": "0xb2",
+            "oct": "262",
+            "bin": "10110010"
+        },
+        "179": {
+            "is_cc": false,
+            "ascii": "│",
+            "description": "",
+            "dec": "179",
+            "hex": "0xb3",
+            "oct": "263",
+            "bin": "10110011"
+        },
+        "180": {
+            "is_cc": false,
+            "ascii": "┤",
+            "description": "",
+            "dec": "180",
+            "hex": "0xb4",
+            "oct": "264",
+            "bin": "10110100"
+        },
+        "181": {
+            "is_cc": false,
+            "ascii": "Á",
+            "description": "",
+            "dec": "181",
+            "hex": "0xb5",
+            "oct": "265",
+            "bin": "10110101"
+        },
+        "182": {
+            "is_cc": false,
+            "ascii": "Â",
+            "description": "",
+            "dec": "182",
+            "hex": "0xb6",
+            "oct": "266",
+            "bin": "10110110"
+        },
+        "183": {
+            "is_cc": false,
+            "ascii": "À",
+            "description": "",
+            "dec": "183",
+            "hex": "0xb7",
+            "oct": "267",
+            "bin": "10110111"
+        },
+        "184": {
+            "is_cc": false,
+            "ascii": "©",
+            "description": "",
+            "dec": "184",
+            "hex": "0xb8",
+            "oct": "270",
+            "bin": "10111000"
+        },
+        "185": {
+            "is_cc": false,
+            "ascii": "╣",
+            "description": "",
+            "dec": "185",
+            "hex": "0xb9",
+            "oct": "271",
+            "bin": "10111001"
+        },
+        "186": {
+            "is_cc": false,
+            "ascii": "║",
+            "description": "",
+            "dec": "186",
+            "hex": "0xba",
+            "oct": "272",
+            "bin": "10111010"
+        },
+        "187": {
+            "is_cc": false,
+            "ascii": "╗",
+            "description": "",
+            "dec": "187",
+            "hex": "0xbb",
+            "oct": "273",
+            "bin": "10111011"
+        },
+        "188": {
+            "is_cc": false,
+            "ascii": "╝",
+            "description": "",
+            "dec": "188",
+            "hex": "0xbc",
+            "oct": "274",
+            "bin": "10111100"
+        },
+        "189": {
+            "is_cc": false,
+            "ascii": "¢",
+            "description": "",
+            "dec": "189",
+            "hex": "0xbd",
+            "oct": "275",
+            "bin": "10111101"
+        },
+        "190": {
+            "is_cc": false,
+            "ascii": "¥",
+            "description": "",
+            "dec": "190",
+            "hex": "0xbe",
+            "oct": "276",
+            "bin": "10111110"
+        },
+        "191": {
+            "is_cc": false,
+            "ascii": "┐",
+            "description": "",
+            "dec": "191",
+            "hex": "0xbf",
+            "oct": "277",
+            "bin": "10111111"
+        },
+        "192": {
+            "is_cc": false,
+            "ascii": "└",
+            "description": "",
+            "dec": "192",
+            "hex": "0xc0",
+            "oct": "300",
+            "bin": "11000000"
+        },
+        "193": {
+            "is_cc": false,
+            "ascii": "┴",
+            "description": "",
+            "dec": "193",
+            "hex": "0xc1",
+            "oct": "301",
+            "bin": "11000001"
+        },
+        "194": {
+            "is_cc": false,
+            "ascii": "┬",
+            "description": "",
+            "dec": "194",
+            "hex": "0xc2",
+            "oct": "302",
+            "bin": "11000010"
+        },
+        "195": {
+            "is_cc": false,
+            "ascii": "├",
+            "description": "",
+            "dec": "195",
+            "hex": "0xc3",
+            "oct": "303",
+            "bin": "11000011"
+        },
+        "196": {
+            "is_cc": false,
+            "ascii": "─",
+            "description": "",
+            "dec": "196",
+            "hex": "0xc4",
+            "oct": "304",
+            "bin": "11000100"
+        },
+        "197": {
+            "is_cc": false,
+            "ascii": "┼",
+            "description": "",
+            "dec": "197",
+            "hex": "0xc5",
+            "oct": "305",
+            "bin": "11000101"
+        },
+        "198": {
+            "is_cc": false,
+            "ascii": "ã",
+            "description": "",
+            "dec": "198",
+            "hex": "0xc6",
+            "oct": "306",
+            "bin": "11000110"
+        },
+        "199": {
+            "is_cc": false,
+            "ascii": "Ã",
+            "description": "",
+            "dec": "199",
+            "hex": "0xc7",
+            "oct": "307",
+            "bin": "11000111"
+        },
+        "200": {
+            "is_cc": false,
+            "ascii": "╚",
+            "description": "",
+            "dec": "200",
+            "hex": "0xc8",
+            "oct": "310",
+            "bin": "11001000"
+        },
+        "201": {
+            "is_cc": false,
+            "ascii": "╔",
+            "description": "",
+            "dec": "201",
+            "hex": "0xc9",
+            "oct": "311",
+            "bin": "11001001"
+        },
+        "202": {
+            "is_cc": false,
+            "ascii": "╩",
+            "description": "",
+            "dec": "202",
+            "hex": "0xca",
+            "oct": "312",
+            "bin": "11001010"
+        },
+        "203": {
+            "is_cc": false,
+            "ascii": "╦",
+            "description": "",
+            "dec": "203",
+            "hex": "0xcb",
+            "oct": "313",
+            "bin": "11001011"
+        },
+        "204": {
+            "is_cc": false,
+            "ascii": "╠",
+            "description": "",
+            "dec": "204",
+            "hex": "0xcc",
+            "oct": "314",
+            "bin": "11001100"
+        },
+        "205": {
+            "is_cc": false,
+            "ascii": "═",
+            "description": "",
+            "dec": "205",
+            "hex": "0xcd",
+            "oct": "315",
+            "bin": "11001101"
+        },
+        "206": {
+            "is_cc": false,
+            "ascii": "╬",
+            "description": "",
+            "dec": "206",
+            "hex": "0xce",
+            "oct": "316",
+            "bin": "11001110"
+        },
+        "207": {
+            "is_cc": false,
+            "ascii": "¤",
+            "description": "",
+            "dec": "207",
+            "hex": "0xcf",
+            "oct": "317",
+            "bin": "11001111"
+        },
+        "208": {
+            "is_cc": false,
+            "ascii": "ð",
+            "description": "",
+            "dec": "208",
+            "hex": "0xd0",
+            "oct": "320",
+            "bin": "11010000"
+        },
+        "209": {
+            "is_cc": false,
+            "ascii": "Ð",
+            "description": "",
+            "dec": "209",
+            "hex": "0xd1",
+            "oct": "321",
+            "bin": "11010001"
+        },
+        "210": {
+            "is_cc": false,
+            "ascii": "Ê",
+            "description": "",
+            "dec": "210",
+            "hex": "0xd2",
+            "oct": "322",
+            "bin": "11010010"
+        },
+        "211": {
+            "is_cc": false,
+            "ascii": "Ë",
+            "description": "",
+            "dec": "211",
+            "hex": "0xd3",
+            "oct": "323",
+            "bin": "11010011"
+        },
+        "212": {
+            "is_cc": false,
+            "ascii": "È",
+            "description": "",
+            "dec": "212",
+            "hex": "0xd4",
+            "oct": "324",
+            "bin": "11010100"
+        },
+        "213": {
+            "is_cc": false,
+            "ascii": "ı",
+            "description": "",
+            "dec": "213",
+            "hex": "0xd5",
+            "oct": "325",
+            "bin": "11010101"
+        },
+        "214": {
+            "is_cc": false,
+            "ascii": "Í",
+            "description": "",
+            "dec": "214",
+            "hex": "0xd6",
+            "oct": "326",
+            "bin": "11010110"
+        },
+        "215": {
+            "is_cc": false,
+            "ascii": "Î",
+            "description": "",
+            "dec": "215",
+            "hex": "0xd7",
+            "oct": "327",
+            "bin": "11010111"
+        },
+        "216": {
+            "is_cc": false,
+            "ascii": "Ï",
+            "description": "",
+            "dec": "216",
+            "hex": "0xd8",
+            "oct": "330",
+            "bin": "11011000"
+        },
+        "217": {
+            "is_cc": false,
+            "ascii": "┘",
+            "description": "",
+            "dec": "217",
+            "hex": "0xd9",
+            "oct": "331",
+            "bin": "11011001"
+        },
+        "218": {
+            "is_cc": false,
+            "ascii": "┌",
+            "description": "",
+            "dec": "218",
+            "hex": "0xda",
+            "oct": "332",
+            "bin": "11011010"
+        },
+        "219": {
+            "is_cc": false,
+            "ascii": "█",
+            "description": "",
+            "dec": "219",
+            "hex": "0xdb",
+            "oct": "333",
+            "bin": "11011011"
+        },
+        "220": {
+            "is_cc": false,
+            "ascii": "▄",
+            "description": "",
+            "dec": "220",
+            "hex": "0xdc",
+            "oct": "334",
+            "bin": "11011100"
+        },
+        "221": {
+            "is_cc": false,
+            "ascii": "¦",
+            "description": "",
+            "dec": "221",
+            "hex": "0xdd",
+            "oct": "335",
+            "bin": "11011101"
+        },
+        "222": {
+            "is_cc": false,
+            "ascii": "Ì",
+            "description": "",
+            "dec": "222",
+            "hex": "0xde",
+            "oct": "336",
+            "bin": "11011110"
+        },
+        "223": {
+            "is_cc": false,
+            "ascii": "▀",
+            "description": "",
+            "dec": "223",
+            "hex": "0xdf",
+            "oct": "337",
+            "bin": "11011111"
+        },
+        "224": {
+            "is_cc": false,
+            "ascii": "Ó",
+            "description": "",
+            "dec": "224",
+            "hex": "0xe0",
+            "oct": "340",
+            "bin": "11100000"
+        },
+        "225": {
+            "is_cc": false,
+            "ascii": "ß",
+            "description": "",
+            "dec": "225",
+            "hex": "0xe1",
+            "oct": "341",
+            "bin": "11100001"
+        },
+        "226": {
+            "is_cc": false,
+            "ascii": "Ô",
+            "description": "",
+            "dec": "226",
+            "hex": "0xe2",
+            "oct": "342",
+            "bin": "11100010"
+        },
+        "227": {
+            "is_cc": false,
+            "ascii": "Ò",
+            "description": "",
+            "dec": "227",
+            "hex": "0xe3",
+            "oct": "343",
+            "bin": "11100011"
+        },
+        "228": {
+            "is_cc": false,
+            "ascii": "õ",
+            "description": "",
+            "dec": "228",
+            "hex": "0xe4",
+            "oct": "344",
+            "bin": "11100100"
+        },
+        "229": {
+            "is_cc": false,
+            "ascii": "Õ",
+            "description": "",
+            "dec": "229",
+            "hex": "0xe5",
+            "oct": "345",
+            "bin": "11100101"
+        },
+        "230": {
+            "is_cc": false,
+            "ascii": "µ",
+            "description": "",
+            "dec": "230",
+            "hex": "0xe6",
+            "oct": "346",
+            "bin": "11100110"
+        },
+        "231": {
+            "is_cc": false,
+            "ascii": "þ",
+            "description": "",
+            "dec": "231",
+            "hex": "0xe7",
+            "oct": "347",
+            "bin": "11100111"
+        },
+        "232": {
+            "is_cc": false,
+            "ascii": "Þ",
+            "description": "",
+            "dec": "232",
+            "hex": "0xe8",
+            "oct": "350",
+            "bin": "11101000"
+        },
+        "233": {
+            "is_cc": false,
+            "ascii": "Ú",
+            "description": "",
+            "dec": "233",
+            "hex": "0xe9",
+            "oct": "351",
+            "bin": "11101001"
+        },
+        "234": {
+            "is_cc": false,
+            "ascii": "Û",
+            "description": "",
+            "dec": "234",
+            "hex": "0xea",
+            "oct": "352",
+            "bin": "11101010"
+        },
+        "235": {
+            "is_cc": false,
+            "ascii": "Ù",
+            "description": "",
+            "dec": "235",
+            "hex": "0xeb",
+            "oct": "353",
+            "bin": "11101011"
+        },
+        "236": {
+            "is_cc": false,
+            "ascii": "ý",
+            "description": "",
+            "dec": "236",
+            "hex": "0xec",
+            "oct": "354",
+            "bin": "11101100"
+        },
+        "237": {
+            "is_cc": false,
+            "ascii": "Ý",
+            "description": "",
+            "dec": "237",
+            "hex": "0xed",
+            "oct": "355",
+            "bin": "11101101"
+        },
+        "238": {
+            "is_cc": false,
+            "ascii": "¯",
+            "description": "",
+            "dec": "238",
+            "hex": "0xee",
+            "oct": "356",
+            "bin": "11101110"
+        },
+        "239": {
+            "is_cc": false,
+            "ascii": "´",
+            "description": "",
+            "dec": "239",
+            "hex": "0xef",
+            "oct": "357",
+            "bin": "11101111"
+        },
+        "240": {
+            "is_cc": false,
+            "ascii": "≡",
+            "description": "",
+            "dec": "240",
+            "hex": "0xf0",
+            "oct": "360",
+            "bin": "11110000"
+        },
+        "241": {
+            "is_cc": false,
+            "ascii": "±",
+            "description": "",
+            "dec": "241",
+            "hex": "0xf1",
+            "oct": "361",
+            "bin": "11110001"
+        },
+        "242": {
+            "is_cc": false,
+            "ascii": "‗",
+            "description": "",
+            "dec": "242",
+            "hex": "0xf2",
+            "oct": "362",
+            "bin": "11110010"
+        },
+        "243": {
+            "is_cc": false,
+            "ascii": "¾",
+            "description": "",
+            "dec": "243",
+            "hex": "0xf3",
+            "oct": "363",
+            "bin": "11110011"
+        },
+        "244": {
+            "is_cc": false,
+            "ascii": "¶",
+            "description": "",
+            "dec": "244",
+            "hex": "0xf4",
+            "oct": "364",
+            "bin": "11110100"
+        },
+        "245": {
+            "is_cc": false,
+            "ascii": "§",
+            "description": "",
+            "dec": "245",
+            "hex": "0xf5",
+            "oct": "365",
+            "bin": "11110101"
+        },
+        "246": {
+            "is_cc": false,
+            "ascii": "÷",
+            "description": "",
+            "dec": "246",
+            "hex": "0xf6",
+            "oct": "366",
+            "bin": "11110110"
+        },
+        "247": {
+            "is_cc": false,
+            "ascii": "¸",
+            "description": "",
+            "dec": "247",
+            "hex": "0xf7",
+            "oct": "367",
+            "bin": "11110111"
+        },
+        "248": {
+            "is_cc": false,
+            "ascii": "°",
+            "description": "",
+            "dec": "248",
+            "hex": "0xf8",
+            "oct": "370",
+            "bin": "11111000"
+        },
+        "249": {
+            "is_cc": false,
+            "ascii": "¨",
+            "description": "",
+            "dec": "249",
+            "hex": "0xf9",
+            "oct": "371",
+            "bin": "11111001"
+        },
+        "250": {
+            "is_cc": false,
+            "ascii": "·",
+            "description": "",
+            "dec": "250",
+            "hex": "0xfa",
+            "oct": "372",
+            "bin": "11111010"
+        },
+        "251": {
+            "is_cc": false,
+            "ascii": "¹",
+            "description": "",
+            "dec": "251",
+            "hex": "0xfb",
+            "oct": "373",
+            "bin": "11111011"
+        },
+        "252": {
+            "is_cc": false,
+            "ascii": "³",
+            "description": "",
+            "dec": "252",
+            "hex": "0xfc",
+            "oct": "374",
+            "bin": "11111100"
+        },
+        "253": {
+            "is_cc": false,
+            "ascii": "²",
+            "description": "",
+            "dec": "253",
+            "hex": "0xfd",
+            "oct": "375",
+            "bin": "11111101"
+        },
+        "254": {
+            "is_cc": false,
+            "ascii": "■",
+            "description": "",
+            "dec": "254",
+            "hex": "0xfe",
+            "oct": "376",
+            "bin": "11111110"
+        },
+        "255": {
+            "is_cc": false,
+            "ascii": "nbsp",
+            "description": "",
+            "dec": "255",
+            "hex": "0xff",
+            "oct": "377",
+            "bin": "11111111"
+        }
     }
 }
