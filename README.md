@@ -30,7 +30,7 @@ Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 ## Table of contents
 1. [How to use](#how-to-use)
 1. [Commands](#commands)
-1' [Code explained](#code-explained)
+1. [Code explained](#code-explained)
 
 ## How to use
 ASCII50 really is mainly a reference to look up ASCII codes.
@@ -56,6 +56,8 @@ As this is currently just a fun-project the progress of this undertaking depends
 ### Repo structure
 The root directory contains **no** app-relevant code.
 
+___
+
 #### /root/
 ```sh
 /root/
@@ -73,7 +75,7 @@ The root directory contains **no** app-relevant code.
 ```
 **`app/` The app directory is currently not in the repo but will be added as soon as the Electron app is available.**
 
-**`web/` The web directory contains everything that is up on the host server.**
+**`web/` The web directory contains everything relevant to the web app.**
 
 `.gitignore` The default git file that make sure no temporary files are getting uploaded to GitHub (e.g. `__pycache__/`).
 
@@ -84,6 +86,8 @@ The root directory contains **no** app-relevant code.
 `scss_compiler.py` A simple Python script that makes compiling SCSS to CSS easy during development.
 
 `util.py` Utilities that are being used by the above Python script.
+
+___
 
 #### /web/
 ```sh
@@ -107,20 +111,15 @@ The root directory contains **no** app-relevant code.
   ├─ README.md
   └─ firebase.json
 ```
+**`public/` This directory contains everything that is up on the host server.**
 
-We use **SCSS** as a pre-processor for CSS. It allows for easier CSS typing and compiles to vanilla CSS before deploying.
-* main.scss (compiles to main.css)
-* main.css.map (by-product of compilation)
+`.firebaserc` Tells Firebase the associated project (not relevant for the app).
 
-What about the rest?
-ASCII50 uses **Google's Firebase** platform for hosting.
-It adds a couple of files that allows for using other Firebase services like Auth & Cloud Functions (which we currently don't actually use).
-* .firebaserc
-* firebase.json
+`README.md` Find more detail about the logic about the app.
 
-And then there is **Github's** files:
-* .gitignore
-* README.md (which you are currently reading)
+`firebase.json` The configuration file that tells Firebase what to deploy to the host server (not relevant for the app).
+
+___
 
 ## Commands
 As you might have realized, ASCII50 has its own command line... sort of.
