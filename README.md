@@ -6,6 +6,8 @@ by Christopher Klix
 
 Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
+*NEW* Updated to v2.0
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ChristopherKlix/ascii50?style=for-the-badge)
 
 ![GitHub issues](https://img.shields.io/github/issues/ChristopherKlix/ascii50?style=for-the-badge)
@@ -43,13 +45,6 @@ The command line currently only supports the `ascii50` programm which takes one 
 More detail: [Commands](#commands)
 
 **Upcoming features**
-- [x] copy int or char to clipboard
-- [ ] add defer to JS script file (next release)
-- [ ] improve mobile user interface (next release)
-- [ ] explanations for ASCII codes 0-32 & 128 (control characters)
-- [ ] type instant conversion (text field to type in 'A' -> duck says '65')
-- [ ] maybe interactive duck? - are there APIs for GPT or chatbots?
-- [ ] syntax references - converting int to ASCII char in Python, JS etc.
 
 
 ## Code explained

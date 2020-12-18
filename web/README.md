@@ -16,7 +16,7 @@ Currently live on https://ascii50.firebaseapp.com or https://ascii50.web.app
 
 Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 
-**Please send feature requests or bug reports via the [Google Form](https://forms.gle/2xBZcCashPk7kkgf9)!**
+**Please send feature requests or bug reports!**
 
 ## Table of contents
 1. [Features](#features)
