@@ -6,7 +6,7 @@ by Christopher Klix
 
 Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
-*NEW* Updated to v2.0
+__*NEW* Updated to v2.0__
 <span style="background-color: #E6FFED; color: #22863A">`New Features`</span>
 * ASCII 128-255 added (incl. ©, æ, █)
 * ASCII codes for 'octal' & 'binary' added
@@ -28,11 +28,11 @@ Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 **Please send feature requests or bug reports!**
 
 ## Table of contents
-1. [How to use](#features)
-1. [Code explained](#code-explained)
+1. [How to use](#how-to-use)
 1. [Commands](#commands)
+1' [Code explained](#code-explained)
 
-## Features
+## How to use
 ASCII50 really is mainly a reference to look up ASCII codes.
 
 **Copy to clipboard**
@@ -47,15 +47,66 @@ The command line currently only supports the `ascii50` programm which takes one 
 
 More detail: [Commands](#commands)
 
-**Upcoming features**
-
 
 ## Code explained
-**Don't be intimidated!** The main content is only in **4 files**:
-* index.html
-* main.css
-* main.js
-* ddb.png (the duck)
+The app is currently only available on the web but I'm currently working on making it available as a macOS app as well.
+Android & iOS/iPadOS might come as well (probably first as Electron-Wrapper and maybe native at some point).
+As this is currently just a fun-project the progress of this undertaking depends on motivation and time :).
+
+### Repo structure
+The root directory contains **no** app-relevant code.
+
+#### /root/
+```sh
+/root/
+  ├─ app/
+  │    └─ ...
+  │
+  ├─ web/
+  │    └─ ...
+  │
+  ├─ .gitignoe
+  ├─ LICENSE
+  ├─ README.md (this file)
+  ├─ scss_compiler.py
+  └─ util.py
+```
+**`app/` The app directory is currently not in the repo but will be added as soon as the Electron app is available.**
+
+**`web/` The web directory contains everything that is up on the host server.**
+
+`.gitignore` The default git file that make sure no temporary files are getting uploaded to GitHub (e.g. `__pycache__/`).
+
+`LICENSE` A simple license file.
+
+`README.md` You are reading it right now.
+
+`scss_compiler.py` A simple Python script that makes compiling SCSS to CSS easy during development.
+
+`util.py` Utilities that are being used by the above Python script.
+
+#### /web/
+```sh
+ /web/
+  ├─ public/
+  │    ├─ css/
+  │    │    └─ ...
+  │    │
+  │    ├─ img/
+  │    │    └─ ...
+  │    │
+  │    ├─ js/
+  │    │    └─ ...
+  │    │
+  │    ├─ scss/
+  │    │    └─ ...
+  │    │
+  │    └─ index.html
+  │
+  ├─ .firebaserc
+  ├─ README.md
+  └─ firebase.json
+```
 
 We use **SCSS** as a pre-processor for CSS. It allows for easier CSS typing and compiles to vanilla CSS before deploying.
 * main.scss (compiles to main.css)
@@ -70,47 +121,6 @@ It adds a couple of files that allows for using other Firebase services like Aut
 And then there is **Github's** files:
 * .gitignore
 * README.md (which you are currently reading)
-
-## HTML
-The **index.html** file in itself is pretty simple.
-
-By convention, the entire content is wrapped into a `<div id="wrapper">`. It technically is a bit redundant, as `<body>` already does that, but it allows for some more control in CSS for example.
-
-Inside the `<div id="wrapper">` are **three sections**.
-* `<div id="header">`
-* `<table id="table">`
-* `<div id="copyright">`
-
-### header (not `<head>`)
-This section contains everything **above** the table. From the title, to the command-line and the duck.
-
-Each sub-section is wrapped into a container `<div>` with a distinct id.
-This way, both, CSS and JS can easily reference each individual element.
-
-### table
-The table contains... well, nothing really.
-
-```
-...
-<!-- TABLE -- empty after DOM loaded, JS fills dynamically -->
-<table id="table">
-</table>
-...
-```
-
-The **main.js** file is executed after the DOM has been loaded and populates the table.
-This simply means, that it creates `<tr>` and `<td>` tags and inserts integers and strings.
-
-See [Javascript](#javascript) for more detail.
-
-### copyright
-Well, each site needs a copyright line.
-
-`number.toString(16)` converts an integer into a hexadecimal string. `65` becomes `41`.
-
-By convention `'0x'.concat(...)` converts `65` into a more readable format `0x41`.
-
-
 
 ## Commands
 As you might have realized, ASCII50 has its own command line... sort of.
