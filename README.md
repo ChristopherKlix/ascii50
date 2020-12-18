@@ -35,17 +35,19 @@ Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 ## How to use
 ASCII50 really is mainly a reference to look up ASCII codes.
 
-**Copy to clipboard**
+### Copy to clipboard
 
-You can click on any char and it will copy either the integer or char to your clipboard
+You can click on any ASCII code or character (e.g. `64` or `@`) and it will copy it to your clipboard.
+Some characters were created (back in the days) for the purpose of controlling devices.
+Which is why they are called 'control characters' and are not printable and therefore not 'copy-able'.
 
-**Commands**
+Those include ASCII 0-31 & 127.
+
+### Commands
 
 You can run commands via the command line. You can find some available commands further down but there are also some shortcuts, easter eggs & secret commands.
 
-The command line currently only supports the `ascii50` programm which takes one argument.
-
-More detail: [Commands](#commands)
+More details: [Commands](#commands)
 
 
 ## Code explained
