@@ -7,8 +7,8 @@ by Christopher Klix
 Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
 *NEW* Updated to v2.0
-<span style="background-color: #E6FFED; color: #22863A">New Features</span>
-* ASCII 128-255 added
+<span style="background-color: #E6FFED; color: #22863A">`New Features`</span>
+* ASCII 128-255 added (incl. ©, æ, █)
 * ASCII codes for 'octal' & 'binary' added
 * Improved logic (JS)
 * Improved UI & UX (hopefully)
@@ -28,12 +28,8 @@ Both are hosted and secured by [Google Firebase](https://firebase.google.com).
 **Please send feature requests or bug reports!**
 
 ## Table of contents
-1. [Features](#features)
+1. [How to use](#features)
 1. [Code explained](#code-explained)
-1. [HTML](#html)
-1. [SCSS](#scss)
-1. [Javascript](#javascript)
-1. [Regular Expressions](#regular-expressions)
 1. [Commands](#commands)
 
 ## Features
@@ -110,146 +106,26 @@ See [Javascript](#javascript) for more detail.
 ### copyright
 Well, each site needs a copyright line.
 
-## SCSS
-**main.scss** is pre-processed into **main.css**
-The file is only included for completeness.
-
-Both **main.scss** & **main.css** are kept up to date.
-
-You **DON'T** need the main.scss for the website to work.
-Think about it the same way as with hello.c and hello*.
-
-SCSS allows you for example to store rgb values or pixel values in variables at the top and SCSS will replace them within your CSS lines when it is compiled.
-
-It also allows for nesting elements inside of each other.
-
-**SCSS**
-```scss
-$dark: rgb(48, 49, 48);
-
-#element {
-    background-color: $dark;
-    
-    p {
-        color: #ffffff;
-    }
-}
-```
-**CSS**
-```scss
-#element {
-    background-color: rgb(48, 49, 48);
-}
-
-#element p {
-    color: #ffffff;
-}
-```
-
-## Javascript
-Alright, now it is getting fussy.
-
-The JS code in this project is not focused on being clean and super efficient but rather making use of techniques and best practices learned in CS50.
-
-It incorporates `Regular Expressions`, `User Input`, `for loops`, `extracting functions` and much more.
-
-The `<table>` in the **index.html** is rendered empty. After the DOM is loaded, **main.js** populates it with columns and rows.
-
-**HTML**
-```html
-<table id="table">
-</table>
-```
-**JS**
-```javascript
-// get reference to HTML table tag
-let table = document.getElementById("table");
-
-// initialize table mode variable
-// it is used by functions to for example copy a dec || hex integer
-let mode = 'decimal';
-
-/* SETUP TABLE */
-function setup_table(command_mode) {
-
-    // setting mode to input if input conforms to options
-    if (command_mode.search(/^decimal|hexadecimal$/) != -1) {
-        mode = command_mode;
-    } else {
-        return;
-    }
-    ...
-}
-```
-
-This way, the table can be easily re-rendered to display hex codes instead of decimal codes when the user enteres a command.
-
-As you can see, the `setup_table(command_mode)` function uses `Regular Expressions` to check if the argument conforms to possible modes.
-
-Now, we won't go over every implementation detail. If you are interested, you can go into the source code yourself. It is very well documented with comments.
-
-If you have question, feel free to ask me personally and not the CS50 staff, as they are not involved in this project.
-
-### Populating the table
-After we initialized `ascii_code_n` & `ascii_char_n` to empty arrays, we iterate over `0-127` (128 ASCII chars) and populate one column after the other.
-Instead of hardcoding the `chars`, we convert the current `integer` (ASCII code) into the corresponding ASCII char.
-
-**JS**
-```javascript
-// inside the setup_table() function
-...
-
-    for (let number = 0; number < 128; number++) {
-        if (...) {
-        
-            ...
-            
-        } else if (number < 64) {
-            if (mode === 'hexadecimal') {
-                let hex = '0x'.concat(number.toString(16));
-                ascii_code_3.push(hex);
-            } else {
-                ascii_code_3.push(number);
-            }
-            let char = String.fromCharCode(number);
-            ascii_char_3.push(char);
-        } else if (...) {
-        
-                ...
-                
-        }
-    }
-
-...
-```
 `number.toString(16)` converts an integer into a hexadecimal string. `65` becomes `41`.
 
 By convention `'0x'.concat(...)` converts `65` into a more readable format `0x41`.
 
-## Regular Expressions
-Yeah, what everybody was waiting for!
 
-ASCII50 makes use of **RE** for processing the command-line commands.
-For example, triggering HEX mode does not only work with `ascii50 hexadecimal` but also `ascii50 hex`.
-
-Or in **RE** words: `/^ascii50\s+hex(adecimal)?$/i`
-
-Check out the sourcecode for `main.js` to see the **RE** for getting the sourcecode.
-
-A very helpful tool for figuring out **RE** is https://regex101.com.
 
 ## Commands
 As you might have realized, ASCII50 has its own command line... sort of.
 
 **Commands**
 ```
-ascii50 hexadecimal (changes ASCII codes into hex)
+[hex, hexadecimal] (changes ASCII codes into hex)
 
-ascii50 decimal (changes ASCII codes into decimal)
+[dec, decimal] (changes ASCII codes into decimal)
 
-ascii50 sourcecode (shows the source code)
+[source, sourcecode, github] (shows the source code)
 
-ascii50 matrix (blue pill or red pill?)
+[matrix] (follow the white rabbit)
+
+[buh] (👻)
 
 ... secret commands you said?
 ```
