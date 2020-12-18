@@ -7,6 +7,13 @@ by Christopher Klix
 Thanks a lot for amazing lectures to David J. Malan, Brian Yu, Colton Ogden & the entire CS50 staff!
 
 *NEW* Updated to v2.0
+<span style="background-color: #E6FFED; color: #22863A">New Features</span>
+* ASCII 128-255 added
+* ASCII codes for 'octal' & 'binary' added
+* Improved logic (JS)
+* Improved UI & UX (hopefully)
+* Bug fixes
+* Added Easter Eggs
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ChristopherKlix/ascii50?style=for-the-badge)
 
