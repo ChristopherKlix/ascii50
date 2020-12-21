@@ -127,7 +127,7 @@ ___
 As you might have realized, ASCII50 has its own command line... sort of.
 
 **Commands**
-```
+```sh
 [dec, decimal] # Changes ASCII codes into decimal (base-10)
 
 [hex, hexadecimal] # Changes ASCII codes into hex (base-16)
