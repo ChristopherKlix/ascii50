@@ -136,7 +136,7 @@ As you might have realized, ASCII50 has its own command line... sort of.
 
 [bin, binary] # Changes ASCII codes into binary (base-2)
 
-[uhm?, help] # Shows a short 'tutorial' for the tool
+[uhm, help] # Shows a short 'tutorial' for the tool
 
 [source, sourcecode, github] # Shows the source code
 
