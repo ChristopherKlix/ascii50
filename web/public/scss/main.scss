@@ -75,7 +75,6 @@ html {
             font-size: large;
             background-color: rgb(37, 37, 37);
             border-radius: 9px;
-            // border: 3px #1f1f1f solid;
             padding-left: 1rem;
             padding-right: 1rem;
             margin-bottom: 1rem;
@@ -97,6 +96,7 @@ html {
     }
 
     #nav-wrapper {
+        visibility: visible;
         // assign grid id
         grid-area: nav;
     
@@ -191,7 +191,7 @@ html {
     }
 }
 
-table {
+#table {
     table-layout: fixed;
     margin: auto;
 
@@ -280,6 +280,49 @@ table {
                 visibility: visible;
             }
         }
+    }
+}
+
+#text {
+    margin: auto;
+    text-align: left;
+    width: 24rem;
+    color: #aaaaaa;
+
+    h3 {
+        margin-bottom: 4px;
+    }
+
+    p {
+        margin-top: 0;
+
+        // & + pre {
+        //     margin-top: 2rem;
+        // }
+    }
+
+    hr {
+        border-color: #888888;
+        margin: 1.4rem auto;
+    }
+
+    .pre-wrapper {
+        margin: 2rem auto;
+    }
+}
+
+pre {
+    margin: 1rem auto;
+    background-color: $dark-accent;
+    border-radius: 9px;
+    width: 16rem;
+    padding: 0.8rem;    
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ffffff;
+
+    span {
+        color: #888888;
     }
 }
 

@@ -7,22 +7,24 @@ let ascii_type;
 let show_ascii_description;
 
 // References
-const command_line = document.getElementById("command-line");
-const table = document.getElementById("table");
-const btn_128 = document.getElementById("btn-128");
-const btn_256 = document.getElementById("btn-256");
-const duck = document.getElementById("duck");
-const quack_put = document.getElementById("quack-put");
-const copied = document.getElementById("copied");
-const greeting = document.getElementById("greeting");
+const DOM_command_line = document.getElementById("command-line");
+const DOM_table = document.getElementById("table");
+const DOM_text = document.getElementById("text");
+const DOM_table_wrapper = document.getElementById("table-wrapper");
+const DOM_btn_128 = document.getElementById("btn-128");
+const DOM_btn_256 = document.getElementById("btn-256");
+const DOM_duck = document.getElementById("duck");
+const DOM_quack_put = document.getElementById("quack-put");
+const DOM_copied = document.getElementById("copied");
+const DOM_greeting = document.getElementById("greeting");
 
 // Event Listeners
-btn_128.addEventListener('click', function(){
+DOM_btn_128.addEventListener('click', function(){
     toggle_ascii_range('128')}, false);
-btn_256.addEventListener('click', function(){
+DOM_btn_256.addEventListener('click', function(){
     toggle_ascii_range('256')}, false);
     
-duck.addEventListener('click', quack);
+DOM_duck.addEventListener('click', quack);
 
 // Run command line logic w/ event listener
 init_command_line();

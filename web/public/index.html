@@ -17,6 +17,7 @@
     <script defer src="./js/clipboard.js"></script>
     <script defer src="./js/duck.js"></script>
     <script defer src="./js/command_line.js"></script>
+    <script defer src="./js/help.js"></script>
     <script defer src="./js/table.js"></script>
     <!-- Init needs to be exec last -->
     <!-- Calls all previously defined init functions -->
@@ -55,7 +56,7 @@
 
             <!-- grid-area: cmd -->
             <div id="command">
-                <p class="hint">Try typing 'hex'</p>
+                <p class="hint">Try typing 'hex' or 'uhm?'</p>
                 <div id="command-line-wrapper">
                     <span>$</span>
                     <input id="command-line" type="text" autofocus>
@@ -75,11 +76,16 @@
         </div>
 
         <!-- TABLE -- empty after DOM loaded, JS fills dynamically -->
-        <table id="table">
-        </table>
+        <div id="table-wrapper">
+            <table id="table">
+            </table>
+            <div id="text">
+            </div>
+        </div>
 
         <!-- CREDIT -->
         <div id="credit">
+            <p>Try [dec] [hex] [help] [source] in the command-line.</p>
             <p>Copyright © 2020 Christopher Klix. All rights reserved.</p>
             <p>No official CS50 service - see <a href="https://github.com/ChristopherKlix/ascii50/" target="blank">GitHub Repo</a> for more details.</p>
         </div>

@@ -58,6 +58,7 @@ html ::-webkit-scrollbar {
   outline: none;
 }
 #header #nav-wrapper {
+  visibility: visible;
   grid-area: nav;
 }
 #header #nav-wrapper #copy-tooltip-wrapper {
@@ -136,49 +137,49 @@ html ::-webkit-scrollbar {
   cursor: pointer;
 }
 
-table {
+#table {
   table-layout: fixed;
   margin: auto;
 }
-table tr:nth-child(1) td:nth-child(1) {
+#table tr:nth-child(1) td:nth-child(1) {
   border-radius: 0.6rem 0 0 0;
 }
-table tr:nth-child(1) td:nth-child(16) {
+#table tr:nth-child(1) td:nth-child(16) {
   border-radius: 0 0.6rem 0 0;
 }
-table tr:nth-child(16) td:nth-child(1) {
+#table tr:nth-child(16) td:nth-child(1) {
   border-radius: 0 0 0 0.6rem;
 }
-table tr:nth-child(16) td:nth-child(16) {
+#table tr:nth-child(16) td:nth-child(16) {
   border-radius: 0 0 0.6rem 0;
 }
-table tr {
+#table tr {
   overflow: hidden;
   height: 30px;
   text-align: center;
   background-color: #252525;
 }
-table tr td {
+#table tr td {
   position: relative;
   display: table-cell !important;
   width: 4vw;
   transition: background-color 0.1s;
 }
-table tr td.number {
+#table tr td.number {
   color: rgba(255, 255, 255, 0.2);
 }
-table tr td.number:hover {
+#table tr td.number:hover {
   background-color: rgba(163, 185, 0, 0.6);
   cursor: pointer;
 }
-table tr td.char:hover {
+#table tr td.char:hover {
   background-color: #a3b900;
   cursor: default;
 }
-table tr td.char:hover.pointer {
+#table tr td.char:hover.pointer {
   cursor: pointer;
 }
-table tr td .tooltip {
+#table tr td .tooltip {
   position: fixed;
   top: 130px;
   left: 200px;
@@ -191,7 +192,7 @@ table tr td .tooltip {
   text-align: center;
   z-index: 1;
 }
-table tr td .tooltip::after {
+#table tr td .tooltip::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -201,8 +202,42 @@ table tr td .tooltip::after {
   border-style: solid;
   border-color: #252525 transparent transparent transparent;
 }
-table tr td:hover .tooltip {
+#table tr td:hover .tooltip {
   visibility: visible;
+}
+
+#text {
+  margin: auto;
+  text-align: left;
+  width: 24rem;
+  color: #aaaaaa;
+}
+#text h3 {
+  margin-bottom: 4px;
+}
+#text p {
+  margin-top: 0;
+}
+#text hr {
+  border-color: #888888;
+  margin: 1.4rem auto;
+}
+#text .pre-wrapper {
+  margin: 2rem auto;
+}
+
+pre {
+  margin: 1rem auto;
+  background-color: #252525;
+  border-radius: 9px;
+  width: 16rem;
+  padding: 0.8rem;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+pre span {
+  color: #888888;
 }
 
 #credit {

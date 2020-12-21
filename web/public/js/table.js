@@ -14,7 +14,9 @@ function create_table(type=ascii_type, range=ascii_range) {
     ascii_range = range;
 
     // Clearing table to redraw
-    table.innerHTML = '';
+    DOM_table.innerHTML = '';
+    DOM_text.innerHTML = '';
+    $("#nav-wrapper").css('visibility', 'visible');
 
     // Define table layout
     const columns = 16;
@@ -23,7 +25,7 @@ function create_table(type=ascii_type, range=ascii_range) {
     // Iterate over each row
     for (let row = 0; row < rows; row++) {
         // Create a new row
-        let new_row = table.insertRow(-1);
+        const new_row = table.insertRow(-1);
 
         // Iterate over each column
         for (let column = 0; column < columns; column += 2) {
@@ -38,32 +40,31 @@ function create_table(type=ascii_type, range=ascii_range) {
             const ascii_cc          = json[ascii_range][ascii_index]["is_cc"];
             
             // Create first cell -- ASCII code
-            cell_code = new_row.insertCell(column);
-            cell_code.id = 'ascii_code_' + ascii_code;
-            cell_code.className = 'number';
-            cell_code.innerHTML = ascii_code;
+            const DOM_cell_code = new_row.insertCell(column);
+            DOM_cell_code.id = 'ascii_code_' + ascii_code;
+            DOM_cell_code.className = 'number';
+            DOM_cell_code.innerHTML = ascii_code;
             // Add additional styling for certain ASCII code types
             if (ascii_type == 'hex') {
-                cell_code.style.fontSize = '0.9rem';
+                DOM_cell_code.style.fontSize = '0.9rem';
             } else if (ascii_type == 'bin') {
-                cell_code.style.fontSize = '0.6rem';
+                DOM_cell_code.style.fontSize = '0.6rem';
             }
 
             // Create second cell -- ASCII character
-            cell_char = new_row.insertCell(column + 1);
-            cell_char.id = 'ascii_char_' + ascii_code;
-            cell_char.className = ascii_cc ? 'char' : 'char pointer';
-            // cell_char.innerHTML = ascii_cc ? ascii_char + '<span class="tooltip">' + ascii_description + '</span>' : ascii_char;
-            cell_char.innerHTML = ascii_char;
+            const DOM_cell_char = new_row.insertCell(column + 1);
+            DOM_cell_char.id = 'ascii_char_' + ascii_code;
+            DOM_cell_char.className = ascii_cc ? 'char' : 'char pointer';
+            DOM_cell_char.innerHTML = ascii_char;
 
             // Trigger 'copy_to_clipboard' on click
-            cell_code.addEventListener('click', function(){
+            DOM_cell_code.addEventListener('click', function(){
                 const cell_id = 'ascii_code_' + ascii_code;
                 copy_to_clipboard(cell_id, ascii_code)
             });
 
             if (!ascii_cc) {
-                cell_char.addEventListener('click', function(){
+                DOM_cell_char.addEventListener('click', function(){
                     const cell_id = 'ascii_char_' + ascii_code;
                     copy_to_clipboard(cell_id, ascii_char)
                 });
@@ -72,11 +73,11 @@ function create_table(type=ascii_type, range=ascii_range) {
                 const copy_tooltip_default = DOM_copy_tooltip.text();
 
                 if (ascii_description != '') {
-                    $("#" + cell_char.id).mouseenter(function() {
+                    $("#" + DOM_cell_char.id).mouseenter(function() {
                         $("#copy-tooltip").text(ascii_description);
                     });
     
-                    $("#" + cell_char.id).mouseleave(function() {
+                    $("#" + DOM_cell_char.id).mouseleave(function() {
                         DOM_copy_tooltip.text(copy_tooltip_default);
                     });
                 }
@@ -84,20 +85,20 @@ function create_table(type=ascii_type, range=ascii_range) {
         }
     }
 
-    const bel_cell = document.getElementsByClassName("char")[56];
-    const bel_class = bel_cell.className;
-    bel_cell.className = bel_class + ' ' + 'shake';
+    const DOM_bel_cell = document.getElementsByClassName("char")[56];
+    const bel_class = DOM_bel_cell.className;
+    DOM_bel_cell.className = bel_class + ' ' + 'shake';
 }
 
 // Changing ASCII range from '128' to '256' and vice versa
 function toggle_ascii_range(button) {
     if (button === '256') {
-        btn_128.style.backgroundColor = 'rgba(163, 185, 0, 0)';
-        btn_256.style.backgroundColor = 'rgba(163, 185, 0, 1)';
+        DOM_btn_128.style.backgroundColor = 'rgba(163, 185, 0, 0)';
+        DOM_btn_256.style.backgroundColor = 'rgba(163, 185, 0, 1)';
         ascii_range = '256';
     } else if (button === '128') {
-        btn_128.style.backgroundColor = 'rgba(163, 185, 0, 1)';
-        btn_256.style.backgroundColor = 'rgba(163, 185, 0, 0)';
+        DOM_btn_128.style.backgroundColor = 'rgba(163, 185, 0, 1)';
+        DOM_btn_256.style.backgroundColor = 'rgba(163, 185, 0, 0)';
         ascii_range = '128';
     }
 
@@ -105,7 +106,7 @@ function toggle_ascii_range(button) {
 }
 
 function buh() {
-    quack_put.innerHTML = '&#x1F47B';
+    DOM_quack_put.innerHTML = '&#x1F47B';
 
     $("td").each(function() {
         $( this ).addClass('shake-chunk shake-constant');

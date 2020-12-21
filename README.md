@@ -128,15 +128,21 @@ As you might have realized, ASCII50 has its own command line... sort of.
 
 **Commands**
 ```
-[hex, hexadecimal] (changes ASCII codes into hex)
+[dec, decimal] # Changes ASCII codes into decimal (base-10)
 
-[dec, decimal] (changes ASCII codes into decimal)
+[hex, hexadecimal] # Changes ASCII codes into hex (base-16)
 
-[source, sourcecode, github] (shows the source code)
+[oct, octal] # Changes ASCII codes into octal (base-8)
 
-[matrix] (follow the white rabbit)
+[bin, binary] # Changes ASCII codes into binary (base-2)
+
+[uhm?, help] # Shows a short 'tutorial' for the tool
+
+[source, sourcecode, github] # Shows the source code
+
+[matrix] # Follow the white rabbit
 
 [buh] (👻)
 
-... secret commands you said?
+... Secret commands you said?
 ```
