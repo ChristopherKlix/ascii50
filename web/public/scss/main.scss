@@ -1,14 +1,17 @@
-// import Source Sans Pro font
+// Import Source Sans Pro font
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
 
-// define variables
+// Define variables
 $column-width: 5.5%;
+$table-border-radius: 0.6rem;
+
+// Define colors
 $green: rgb(163, 185, 0);
 $blue: rgb(21, 54, 73);
 $dark: rgb(48, 49, 48);
 $dark-accent: rgb(37, 37, 37);
 
-// calculate relative width multiplier
+// Calculate relative width multiplier
 @function get-vw($target) { 
     $vw-context: (1000*.01) * 1px;
     @return ($target/$vw-context) * 1vw;
@@ -32,17 +35,21 @@ html {
     ::selection {
         background: $green !important;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 // header styles
 #header {
     // grid setup
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
         "title cmd duck"
-        "title copymode duck"
+        "title nav duck"
     ;
 
     #title {
@@ -60,8 +67,8 @@ html {
 
         .hint {
             color: #888888;
-            padding-left: 1rem;
             font-size: small;
+            text-align: center;
         }
         
         #command-line-wrapper {
@@ -77,7 +84,6 @@ html {
                 background-color: rgb(37, 37, 37);
                 color: #ffffff;
                 font-size: large;
-                //width: 6rem;
                 border-radius: 9px;
                 border-style: none;
                 padding: .5rem;
@@ -89,17 +95,18 @@ html {
         }
     }
 
-    #copy-mode-wrapper {
+    #nav-wrapper {
+        visibility: visible;
         // assign grid id
-        grid-area: copymode;
+        grid-area: nav;
     
-        #copy-mode-label {
+        #copy-tooltip-wrapper {
             text-align: center;
             font-size: small;
             color: #888888;
         }
         
-        #copy-mode {
+        #toggle-ascii-range-wrapper {
             background-color: $dark-accent;
             width: 10rem;
             margin: auto;
@@ -113,14 +120,15 @@ html {
             
             :nth-child(n) {
                 border-radius: 9px;
+                // transition: background-color 0.3s;
                 cursor: pointer;
             }
         
-            #copy-mode-int {
+            #btn-128 {
                 background-color: $green;
             }
         
-            #copy-mode-char {
+            #btn-256 {
                 background-color: none;
             }
         }
@@ -147,19 +155,29 @@ html {
             transition: opacity 0.1s;
         }
     
-        #quark-put {
+        #quack-put {
+            position: relative;
             width: 80px;
             padding: .3rem 0;
             margin: 0;
             margin-left: .5rem;
             text-align: center;
-            font-style: italic;
             font-weight: 100;
             background-color: $dark-accent;
             text-align: center;
             float: left;
             line-height: 30px;
             border-radius: 9px;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                left: 100%;
+                margin-left: -5px;
+                border-width: 0.8rem;
+                border-style: solid;
+                border-color: transparent transparent transparent $dark-accent;
+            }
         }
     
         #duck {    
@@ -173,9 +191,27 @@ html {
     }
 }
 
-table {
+#table {
     table-layout: fixed;
     margin: auto;
+
+    tr:nth-child(1) {
+        td:nth-child(1) {
+            border-radius: $table-border-radius 0 0 0;
+        }
+        td:nth-child(16) {
+            border-radius: 0 $table-border-radius 0 0;
+        }
+    }
+
+    tr:nth-child(16) {
+        td:nth-child(1) {
+            border-radius: 0 0 0 $table-border-radius;
+        }
+        td:nth-child(16) {
+            border-radius: 0 0 $table-border-radius 0;
+        }
+    }
 
     tr {
         overflow: hidden;
@@ -184,22 +220,109 @@ table {
         background-color: $dark-accent;
 
         td {
+            position: relative;
+            display: table-cell !important;
             width: get-vw(40px);
+            transition: background-color 0.1s;
 
             &.number {
                 color: rgba($color: #ffffff, $alpha: 0.2);
-                cursor: default;
+                
+                &:hover {
+                    background-color: rgba($color: $green, $alpha: 0.6);
+                    cursor: pointer;
+                }
             }
 
             &.char {
 
                 &:hover {
                     background-color: $green;
-                    cursor: pointer;
+                    cursor: default;
+
+                    &.pointer {
+                        cursor: pointer;
+                    }
                 }
             }
 
+            .tooltip {
+                position: fixed;
+                top: 130px;
+                // bottom: 150%;
+                left: 200px;
+                visibility: hidden;
+                
+                width: 250px;
+                padding: 0.6rem 0.8rem;
+                // margin-left: -60px;
+                border-radius: 6px;
+                
+                background-color: $dark-accent;
+                color: #fff;
+                text-align: center;
+              
+                z-index: 1;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: $dark-accent transparent transparent transparent;
+                }
+            }
+
+            &:hover .tooltip {
+                visibility: visible;
+            }
         }
+    }
+}
+
+#text {
+    margin: auto;
+    text-align: left;
+    width: 24rem;
+    color: #aaaaaa;
+
+    h3 {
+        margin-bottom: 4px;
+    }
+
+    p {
+        margin-top: 0;
+
+        // & + pre {
+        //     margin-top: 2rem;
+        // }
+    }
+
+    hr {
+        border-color: #888888;
+        margin: 1.4rem auto;
+    }
+
+    .pre-wrapper {
+        margin: 2rem auto;
+    }
+}
+
+pre {
+    margin: 1rem auto;
+    background-color: $dark-accent;
+    border-radius: 9px;
+    width: 16rem;
+    padding: 0.8rem;    
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ffffff;
+
+    span {
+        color: #888888;
     }
 }
 

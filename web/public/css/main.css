@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap");
+html {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #303130;
+}
+html a {
+  color: #a3b900;
+  text-decoration: none;
+}
+html ::selection {
+  background: #a3b900 !important;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title cmd duck" "title nav duck";
+}
+#header #title {
+  grid-area: title;
+  padding: 1rem;
+}
+#header #title :nth-child(n) {
+  margin: 0;
+}
+#header #command {
+  grid-area: cmd;
+  justify-self: center;
+}
+#header #command .hint {
+  color: #888888;
+  font-size: small;
+  text-align: center;
+}
+#header #command #command-line-wrapper {
+  font-size: large;
+  background-color: #252525;
+  border-radius: 9px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  width: 16rem;
+}
+#header #command #command-line-wrapper #command-line {
+  background-color: #252525;
+  color: #ffffff;
+  font-size: large;
+  border-radius: 9px;
+  border-style: none;
+  padding: 0.5rem;
+}
+#header #command #command-line-wrapper #command-line:focus {
+  outline: none;
+}
+#header #nav-wrapper {
+  visibility: visible;
+  grid-area: nav;
+}
+#header #nav-wrapper #copy-tooltip-wrapper {
+  text-align: center;
+  font-size: small;
+  color: #888888;
+}
+#header #nav-wrapper #toggle-ascii-range-wrapper {
+  background-color: #252525;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  font-size: small;
+  text-align: center;
+  line-height: 1.2rem;
+  border-radius: 9px;
+}
+#header #nav-wrapper #toggle-ascii-range-wrapper :nth-child(n) {
+  border-radius: 9px;
+  cursor: pointer;
+}
+#header #nav-wrapper #toggle-ascii-range-wrapper #btn-128 {
+  background-color: #a3b900;
+}
+#header #nav-wrapper #toggle-ascii-range-wrapper #btn-256 {
+  background-color: none;
+}
+#header #duck-wrapper {
+  grid-area: duck;
+  justify-self: right;
+  margin: 1rem;
+}
+#header #duck-wrapper #copied {
+  color: #888888;
+  font-style: italic;
+  text-align: center;
+  line-height: 30px;
+  font-size: small;
+  padding: 0.3rem 0;
+  margin: 0;
+  float: left;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+#header #duck-wrapper #quack-put {
+  position: relative;
+  width: 80px;
+  padding: 0.3rem 0;
+  margin: 0;
+  margin-left: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  background-color: #252525;
+  text-align: center;
+  float: left;
+  line-height: 30px;
+  border-radius: 9px;
+}
+#header #duck-wrapper #quack-put::after {
+  content: " ";
+  position: absolute;
+  left: 100%;
+  margin-left: -5px;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #252525;
+}
+#header #duck-wrapper #duck {
+  display: inline;
+  width: 30px;
+  padding: 0.3rem 0;
+  margin-left: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#table {
+  table-layout: fixed;
+  margin: auto;
+}
+#table tr:nth-child(1) td:nth-child(1) {
+  border-radius: 0.6rem 0 0 0;
+}
+#table tr:nth-child(1) td:nth-child(16) {
+  border-radius: 0 0.6rem 0 0;
+}
+#table tr:nth-child(16) td:nth-child(1) {
+  border-radius: 0 0 0 0.6rem;
+}
+#table tr:nth-child(16) td:nth-child(16) {
+  border-radius: 0 0 0.6rem 0;
+}
+#table tr {
+  overflow: hidden;
+  height: 30px;
+  text-align: center;
+  background-color: #252525;
+}
+#table tr td {
+  position: relative;
+  display: table-cell !important;
+  width: 4vw;
+  transition: background-color 0.1s;
+}
+#table tr td.number {
+  color: rgba(255, 255, 255, 0.2);
+}
+#table tr td.number:hover {
+  background-color: rgba(163, 185, 0, 0.6);
+  cursor: pointer;
+}
+#table tr td.char:hover {
+  background-color: #a3b900;
+  cursor: default;
+}
+#table tr td.char:hover.pointer {
+  cursor: pointer;
+}
+#table tr td .tooltip {
+  position: fixed;
+  top: 130px;
+  left: 200px;
+  visibility: hidden;
+  width: 250px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+#table tr td .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #252525 transparent transparent transparent;
+}
+#table tr td:hover .tooltip {
+  visibility: visible;
+}
+
+#text {
+  margin: auto;
+  text-align: left;
+  width: 24rem;
+  color: #aaaaaa;
+}
+#text h3 {
+  margin-bottom: 4px;
+}
+#text p {
+  margin-top: 0;
+}
+#text hr {
+  border-color: #888888;
+  margin: 1.4rem auto;
+}
+#text .pre-wrapper {
+  margin: 2rem auto;
+}
+
+pre {
+  margin: 1rem auto;
+  background-color: #252525;
+  border-radius: 9px;
+  width: 16rem;
+  padding: 0.8rem;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+pre span {
+  color: #888888;
+}
+
+#credit {
+  text-align: center;
+  color: #888888;
+  font-size: small;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
