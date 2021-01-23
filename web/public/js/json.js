@@ -2298,9 +2298,9 @@ const json = {
             "bin": "11111110"
         },
         "255": {
-            "is_cc": false,
+            "is_cc": true,
             "ascii": "nbsp",
-            "description": "",
+            "description": "Non-breaking space",
             "dec": "255",
             "hex": "0xff",
             "oct": "377",

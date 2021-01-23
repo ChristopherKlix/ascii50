@@ -6,6 +6,7 @@ function init_table() {
     ascii_range = '128';
 
     create_table(ascii_type=ascii_type, ascii_range=ascii_range);
+    console.log('Parsed #table');
 }
 
 function create_table(type=ascii_type, range=ascii_range) {
